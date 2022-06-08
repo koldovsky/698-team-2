@@ -1,11 +1,16 @@
+.page-separator {
+    display: block;
+    width: 100%;
+}
+
 .our-events {
-    background: url(../img/page_separator_white_above.svg) top / contain no-repeat, url(../img/page-separator.svg) bottom / contain no-repeat;
-    padding: 28px;
+    background: #2c221d;
+    padding: 130px 28px 90px 28px;
 }
 
 @media (min-width: 1200px) {
     .our-events {
-        padding: 150px;
+        padding: 130px;
     }
 }
 
