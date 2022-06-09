@@ -54,8 +54,7 @@ img {
 /* for button/link (you should add your padding and font-size) */
 
 /* for dark green button/link (you should add your padding and font-size) */
-.main-button-dark-green a {
-    color: var(--white-color);
+.main-button-dark-green {
     background-color: var(--main-btn-direction-color-dark);
     border-radius: 50px;
     cursor: pointer;
@@ -63,7 +62,7 @@ img {
     width: fit-content;
 }
 
-.main-button-dark-green a:hover {
+.main-button-dark-green:hover {
     background-color: var(--main-btn-direction-color-light);
 }
 /* for dark green button/link (you should add your padding and font-size) */
