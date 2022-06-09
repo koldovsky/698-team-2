@@ -1,1 +1,61 @@
+.page-separator {
+    display: block;
+    width: 100%;
+}
+
+.blog {
+    background: #fff;
+    padding: 130px 24px 90px 24px;
+}
+
+@media (min-width: 1200px) {
+    .blog {
+        padding: 130px;
+    }
+}
+
+.blog__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.blog__decor-x {
+    color: rgb(150, 90, 28);
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+    line-height: 20px;
+}
+
+.blog__general-title {
+    color: rgb(38, 29, 23);
+    font-size: 34px;
+    line-height: 37.4px;
+    font-weight: 700;
+    letter-spacing: 1.63px;
+}
+
+.seeds-decor {
+    width: 120px;
+}
+
+.blog-text {
+    color: rgb(97, 78, 68);
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 770px;
+    vertical-align: baseline;
+}
+
+.brewery-gallery__img {
+    width: 250px;
+}
 
