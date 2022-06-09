@@ -3,18 +3,18 @@
     width: 100%;
 }
 
-.brewery-gallery {
-    background: #2c221d;
+.blog {
+    background: #fff;
     padding: 130px 24px 90px 24px;
 }
 
 @media (min-width: 1200px) {
-    .brewery-gallery {
+    .blog {
         padding: 130px;
     }
 }
 
-.brewery__content {
+.blog__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,16 +23,16 @@
     gap: 20px;
 }
 
-.brewery__decor-x {
-    color: rgb(248,184,3);
+.blog__decor-x {
+    color: rgb(150, 90, 28);
     font-size: 14px;
     font-weight: 900;
     letter-spacing: 1.4px;
     line-height: 20px;
 }
 
-.brewery__general-title {
-    color: #fff;
+.blog__general-title {
+    color: rgb(38, 29, 23);
     font-size: 34px;
     line-height: 37.4px;
     font-weight: 700;
@@ -43,8 +43,8 @@
     width: 120px;
 }
 
-.brewery-text {
-    color: rgb(244, 238, 225);
+.blog-text {
+    color: rgb(97, 78, 68);
     font-family: Rubik, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -55,12 +55,88 @@
     vertical-align: baseline;
 }
 
-.blog__article {
-    display: grid;
+.blog__img {
+    width: 272px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.blog__articles-father {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.blog__link {
+    text-decoration: none;
+}
+
+
+.blog__article--data {
+    margin-top: 12px;
+    color: rgb(97, 78, 68);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 20px;
+    text-align: left;
+    text-decoration-style: solid;
+    letter-spacing: 1.4px;
+}
+
+.blog__article--header {
+    margin-top: 20px;
+    color: rgb(38, 29, 23);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    word-wrap: break-word;
+    text-decoration-style: solid;
+}
+
+.blog__article--content {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(97, 78, 68);
+    font-family: Rubik, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29px;
+    word-wrap: break-word;
+    text-decoration-style: solid;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.read-more__button {
+    background-color: rgb(44, 133, 54);
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    margin: -10px;
+}
+
+.button-text {
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 10px;
+    padding: 13px 37px;
 }
 
 @media (min-width: 770px) {
-    .blog__article {
+    .blog__articles-father {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
     

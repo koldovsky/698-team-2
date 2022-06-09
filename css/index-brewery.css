@@ -3,18 +3,18 @@
     width: 100%;
 }
 
-.blog {
-    background: #fff;
+.brewery-gallery {
+    background: #2c221d;
     padding: 130px 24px 90px 24px;
 }
 
 @media (min-width: 1200px) {
-    .blog {
+    .brewery-gallery {
         padding: 130px;
     }
 }
 
-.blog__content {
+.brewery__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,16 +23,16 @@
     gap: 20px;
 }
 
-.blog__decor-x {
-    color: rgb(150, 90, 28);
+.brewery__decor-x {
+    color: rgb(248,184,3);
     font-size: 14px;
     font-weight: 900;
     letter-spacing: 1.4px;
     line-height: 20px;
 }
 
-.blog__general-title {
-    color: rgb(38, 29, 23);
+.brewery__general-title {
+    color: #fff;
     font-size: 34px;
     line-height: 37.4px;
     font-weight: 700;
@@ -43,8 +43,8 @@
     width: 120px;
 }
 
-.blog-text {
-    color: rgb(97, 78, 68);
+.brewery-text {
+    color: rgb(244, 238, 225);
     font-family: Rubik, sans-serif;
     font-size: 20px;
     font-weight: 400;
