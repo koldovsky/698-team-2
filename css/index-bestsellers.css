@@ -1,0 +1,25 @@
+.bestsellers {
+    background-color: var(--background-color-dark);
+    padding: 90px 5px;
+}
+.bestseller {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 780px) {
+    .bestseller {
+        flex-direction: row;
+    }
+}
+.bestseller__subtitle {
+    color: var(--white-color);
+}
+.bestseller__title {
+    color: var(--light-xxx-color);
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+.bestseller__text {
+    color: var(--text-color-ligh);
+}
