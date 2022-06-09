@@ -1,6 +1,12 @@
 .our-events {
     background: var(--background-color-dark);
-    padding: 130px 28px 90px 28px;
+    padding: 140px 28px 90px 28px;
+}
+
+@media (min-width: 780px) {
+    .our-events {
+        padding: 100px 33px 90px 33px;
+    }
 }
 
 .our-events__description-text {
@@ -19,14 +25,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    padding: 35px 35px 40px 35px;
+    padding: 40px 40px 45px 40px;
     background-color: #342924;
     gap: 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 780px) {
     .event {
-        padding: 40px;
+        padding: 60px;
         flex-direction: row;
     }
 
@@ -36,16 +42,25 @@
     }
 }
 
-@media (min-width: 991px) {
-    .event {
-        padding: 60px;
-    }
+.event__photo {
+    align-self: stretch;
+}
+
+.event__photo img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .event__description-block {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+}
+
+@media (min-width: 780px) {
+    .event__description-block {
+        padding: 50px 0;
+    }
 }
 
 .event__price {
@@ -73,10 +88,13 @@
     letter-spacing: 0.5px;
     color: var(--text-color-light);
     font-size: 17px;
-    margin-bottom: 20px;
 }
 
-.event__book-link a {
+.event__book-link {
+    padding-bottom: 40px;
+}
+
+.event__book-link {
     padding: 10px 40px;
     font-size: 14px;
 }

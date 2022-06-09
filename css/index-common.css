@@ -24,6 +24,7 @@
 
 a {
     text-decoration: none;
+    color: var(--white-color);
 }
 
 img {
@@ -39,15 +40,15 @@ img {
 /* for every block (you wrap all your content after tag section) */
 
 /* for light green button/link (you should add your padding and font-size) */
-.main-button-light-green a {
-    color: var(--white-color);
+.main-button-light-green {
     background-color: var(--main-btn-direction-color-light);
     border-radius: 50px;
     cursor: pointer;
     transition: 0.5s;
+    width: fit-content;
 }
 
-.main-button-light-green a:hover {
+.main-button-light-green:hover {
     background-color: var(--main-btn-direction-color-dark);
 }
 /* for button/link (you should add your padding and font-size) */
@@ -59,6 +60,7 @@ img {
     border-radius: 50px;
     cursor: pointer;
     transition: 0.5s;
+    width: fit-content;
 }
 
 .main-button-dark-green a:hover {
@@ -110,10 +112,7 @@ img {
 /* title of every sections */
 
 /* page separator (both versions) - check if your partner has done it before you add it to your section */
-.page-separator {
-    display: block;
-    width: 100%;
+.page-separator img {
     background-color: var(--background-color-light);
 }
-
 /* page separator (both versions) - check if your partner has done it before you add it to your section */
