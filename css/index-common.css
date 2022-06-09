@@ -33,7 +33,7 @@ img {
 
 /* for every block (you wrap all your content after tag section) */
 .container {
-    max-width: 980px;
+    max-width: 1200px;
     margin: auto;
 }
 /* for every block (you wrap all your content after tag section) */
