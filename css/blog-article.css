@@ -118,13 +118,161 @@ img {
 
 /* page separator (both versions) - check if your partner has done it before you add it to your section */
 
+.header {
+    background-color: var(--background-color-dark);
+    color: var(--white-color);
+    padding: 30px 0;
+}
+
+@media (min-wifth: 780px) {
+    .header {
+        padding: 0;
+        width: inherit;
+    }
+    
+}
+
+.header__nav-logo img {
+    width: 103px;
+    height: auto;
+    padding-left: 25px;
+}
+
+@media (min-width: 780px) {
+    .header__nav-logo img {
+        position: relative;
+        top: 60px;
+        padding-left: 5px;
+    }
+}
+
+
+.header__nav-menu,
+.header__nav-contactinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    padding: 20px;
+}
+
+/* @media (min-width: 780px) {
+    .header__nav-menu {
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+}
+}
+
+@media (min-width: 780px) {
+    .header__nav-contactinfo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: #261d17;
+        width: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+} */
+
+/* @media (min-width: 1000px) {
+    .header__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo links";
+        grid-column-gap: 10px;
+        align-items: center;
+    }
+
+    .header__nav-contactinfo {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__nav-logo {
+        grid-area: "logo";
+        justify-self: flex-start;
+    }
+
+
+    .header__nav-menu,
+    .header__nav-sociallinks {
+        grid-area: "links";
+        justify-items: flex-end;
+        display: inline-block;
+        padding: 0;
+    }
+} */
+
+
+.header__nav-contactinfo {
+    padding: 0 20px;
+}
+
+.menu-link {
+    text-decoration: none; 
+    color: var(--white-color);
+    font-family: Rubik, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header__nav-contactinfo {
+    text-decoration: none; 
+    color: var(--white-color);
+    font-family: Rubik, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.menu-link {
+    padding: 10px;
+}
+
+#phone-link {
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+@media (min-width: 780px) {
+    .menu-link {
+        padding: 0;
+    }
+}
+
+.social-link img {
+    width: 30px;
+}
+
+.header__nav-sociallinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    width: 150px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+
 .blog {
     background-color: var(--background-color-dark);
     padding: 130px 24px 90px 24px;
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 780px) {
     .blog {
         padding: 30px 0 50px;
         
@@ -156,7 +304,7 @@ img {
     letter-spacing: 1.6px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 780px) {
     .blog__general-title {
         font-size: 44px;
         line-height: 48px;

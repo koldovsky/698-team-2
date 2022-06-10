@@ -68,7 +68,7 @@
 .brewery-gallery__images {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .brewery-gallery__img {
