@@ -6,4 +6,28 @@
     background-color: rgb(44, 34, 29); /* Used if the image is unavailable */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-attachment: fixed;
+    padding: 125px 53px;
  }
+ .main__schedule-title{
+     height: 218px;
+     width: 191px;
+     color: #FFFFFF;
+     word-wrap: break-word;
+     display: block;
+ }
+ .schedule-title__text{
+     height: 212px;
+     width: 203px;
+     font-size: 48px;
+     padding-top: 39px;
+ }
+ .schedule__decor-x{
+    color: var(--light-xxx-color);
+    font-size: 14px;
+    height: 38.28px;
+    width: 18px;
+}
+.main__schedule_wheat{
+    height: 32px;
+    width: 218px;
+}
