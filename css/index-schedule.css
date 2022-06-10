@@ -1,0 +1,9 @@
+.main__schedule-container {
+    background-image: url(../img/shedule/mk_backgroundphoto.webp);
+    min-height: 600px;
+    background-size: cover; 
+    background-position: center;
+    background-color: rgb(44, 34, 29); /* Used if the image is unavailable */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+ }
