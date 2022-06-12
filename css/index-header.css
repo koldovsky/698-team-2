@@ -42,3 +42,58 @@
     line-height: 1.1;
     letter-spacing: 0;
 }
+
+.header__banner-wheat {
+    margin-top: 35px;
+}
+
+.header__banner-wheat img {
+    width: 120px;
+}
+
+.header__banner-info {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--light-brown-color);
+    font-family: Rubik, sans-serif;
+    word-wrap: break-word;
+}
+
+.header__banner-buttongroup {
+    margin-top: 80px;
+    font-weight: 400;
+    font-family: Rubik, sans-serif;
+    font-size: 15.4px;
+    line-height: 1em;
+    letter-spacing: 0;
+}
+
+.button-light-green {
+    padding: 17px 50px;
+    margin: 10px 10px 10px 0;
+    border-radius: 30px;
+    background-color: var(--main-btn-direction-color-light);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-dark-green {
+    padding: 17px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: var(--main-btn-direction-color-dark);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header__banner-titleimage {
+    margin-top: 50px;
+}
+
+.header__banner-titleimage img {
+
+}
+
