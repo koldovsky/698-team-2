@@ -1,0 +1,44 @@
+.header {
+    background-image: url(../img/banner-background.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__nav {
+    padding: 30px 24px;
+
+}
+
+.header__nav-logo {
+    width: 103px;
+    height: auto;
+}
+
+.header__banner {
+    padding: 30px 24px;
+}
+
+.header__banner-subtitle {
+    color: var(--light-xxx-color);
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 1.4285;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: none;
+    font-style: normal;
+}
+
+.header__banner-title {
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--white-color);
+    font-size: 58px;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
