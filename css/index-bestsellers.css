@@ -87,10 +87,10 @@
     margin: 0px 0px 16px 0px;
 }
 .info__title {
- color: var(--background-color-light);
- font-size: 14px;
- font-weight: 600;
- padding: 0px 0px 8px 0px;
+color: var(--background-color-light);
+font-size: 14px;
+font-weight: 600;
+padding: 0px 0px 8px 0px;
 }
 .info__text {
     color: var(--white-color);
