@@ -644,13 +644,17 @@
         <!-- Kovalchuk Viktoria start-->
         <section id="contacts" class="contacts">
             <div class="contacts__intro">
-                <h2>Contacts</h2>
-                <p>Contact us to book a tour, tasting, or order our beer.</p>
+                <h2 class="block-title-light">
+                    Contacts
+                </h2>
+                <p class="contacts__intro-description">
+                    Contact us to book a tour, tasting, or order our beer.
+                </p>
             </div>
             <div class="contacts__details">
                 <div class="contacts__details_point">
                     <div class="point-name">
-                        <h3>Adress</h3>
+                        <h3>Address</h3>
                     </div>
                     <div class="point-description">
                         <p>6118 Jefferson St. West New York.</p>
@@ -672,27 +676,27 @@
                     <div class="point-name">
                         <h3>Contacts</h3>
                     </div>
-                    <div class="point-description">
+                    <div class="point-description-contacts">
                         <p>+1(234)5678900</p>
                         <p>craftbrewery@email.com</p>
                     </div>
                 </div>
-
             </div>
-
             <div class="contacts__map">
-                <iframe
+                <iframe class="contacts__map_view"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.6242183899008!2d-74.02123008500284!3d40.792274840638306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2580577c2bb8b%3A0x18a781b633089821!2s6118%20Jefferson%20St%2C%20West%20New%20York%2C%20NJ%2007093%2C%20USA!5e0!3m2!1sen!2sua!4v1654510692311!5m2!1sen!2sua"
                     max-max-width="600" max-height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div>
-                <form class="contacts_form" action="https://formspree.io/f/xdobjeyk" method="post">
-                    <input type="text" name="name" placeholder="Enter your full name*" required>
-                    <input type="tel" name="phone" placeholder="Enter your phone number*" required>
-                    <input type="email" name="email" placeholder="Enter your e-mail*" required>
-                    <input type="text" name="message" placeholder="Type your message" required>
-                    <input type="submit" name="sumbit" value="Submit">
+
+
+            <div class="contacts__form">
+                <form action="https://formspree.io/f/xdobjeyk" method="post">
+                    <input class="contacts__form_input" type="text" name="name" placeholder="Enter your full name*" required>
+                    <input class="contacts__form_input" type="tel" name="phone" placeholder="Enter your phone number*" required>
+                    <input class="contacts__form_input" type="email" name="email" placeholder="Enter your e-mail*" required>
+                    <input class="contacts__form_input" type="text" name="message" placeholder="Type your message" required>
+                    <input class="contacts__form_input" type="submit" name="sumbit" value="Submit">
                 </form>
             </div>
         </section>
