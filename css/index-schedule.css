@@ -10,66 +10,48 @@
  }
  .main__schedule-title{
      height: 218px;
-     width: 191px;
      color: var(--white-color);
      word-wrap: break-word;
-     display: block;
  }
  .schedule-title__text{
      height: 212px;
-     width: 203px;
      font-size: 48px;
      padding-top: 39px;
  }
  .schedule__decor-x{
     color: var(--light-xxx-color);
     font-size: 14px;
-    height: 38.28px;
-    width: 18px;
 }
 .main__schedule_wheat{
     height: 32px;
-    width: 218px;
+    width: 100px;
     object-fit: contain;
-    margin-left: -55px;
 }
 .main_schedule-text{
     color: var(--white-color);
     word-wrap: break-word;
     font-size: 20px;
     line-height: 1.6;
-    font-weight: 400;
     margin-top: 32px;
+    font-family:var(--rubik-font);
 }
 .main__schedule-buttons{
     margin-top: 44px;
-    font-weight: 400;
     font-family: Rubik, sans-serif;
     font-size: 15.4px;
     line-height: 1em;
-    letter-spacing: 0;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0px 20px;
 }
-.main__schedule-link1 {
+.main__schedule-link {
     padding: 17px 50px;
     margin: 10px 0px 10px 0;
-    border-radius: 30px;
-    background-color: var(--main-btn-direction-color-light);
-    cursor: pointer;
-    transition: 0.5s;
 }
-.main__schedule-link2 {
-    padding: 17px 50px;
-    margin: 10px 0px 10px 0;
-    border-radius: 30px;
-    background-color: var(--main-btn-direction-color-dark);
-    cursor: pointer;
-    transition: 0.5s;
-}
-.main__schedule-link1:hover {
+.main__schedule-link-dark {
     background-color: var(--main-btn-direction-color-dark);
 }
-.main__schedule-link2:hover {
+
+.main__schedule-link-dark:hover {
     background-color: var(--main-btn-direction-color-light);
 }
