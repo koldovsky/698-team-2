@@ -1,7 +1,30 @@
 .contacts {
     background: var(--background-color-dark);
     padding: 70px 28px 90px 28px;
+    display: flex;
+    flex-direction: column;
 }
+.contacts__details_point {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*@media (min-width: 780px) {
+    .contacts__details_point{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    }
+    .point-name {
+        display: flex;
+        flex-direction: row;
+    }
+    .point-description {
+        display: flex;
+        flex-direction: column;
+    } 
+}*/
 
 .contacts__intro-description {
     font-family: 'Rubik', sans-serif;
@@ -13,6 +36,7 @@
     padding-bottom: 15px;
     max-width: 770px;
     text-align: left;
+    display: flex;
 }
 
 .point-name {
@@ -22,7 +46,10 @@
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    margin: 10px auto 10px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+
 }
 
 .point-description {
@@ -60,18 +87,50 @@
     margin: 40px auto auto auto;
     padding: 40px 40px 45px 40px;
     background-color: #342924;
-    gap: 40px;
+   
 }
 
 .contacts__form_input {
     width: 100%;
-    height: 30px;
+    height: 50px;
     display: block;
     align-items: center;
     margin: 10px auto 10px auto;
     border: 2px solid var(--border-color-light);
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: #342924;
-
 }
 
+input::placeholder {
+    color: #858585d9;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .contacts__form_message {
+    width: 100%;
+    height: 120px;
+    display: block;
+    margin: 10px auto 10px auto;
+    border: 2px solid var(--border-color-light);
+    border-radius: 25px;
+    background-color: #342924; 
+  }
+
+  .contacts__form_button {
+    background-color: var(--main-btn-direction-color-light);
+    border-width: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 110%;
+    height: 40px;
+    font-size: 14px;
+    color: var(--white-color);
+    font-weight: bold;
+    margin-top: 55px;
+  }
+
+  .contacts__form_button:hover {
+    background-color: var(--main-btn-direction-color-dark);
+  }
