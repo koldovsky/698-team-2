@@ -30,4 +30,5 @@
 .main__schedule_wheat{
     height: 32px;
     width: 218px;
+    object-fit: contain;
 }
