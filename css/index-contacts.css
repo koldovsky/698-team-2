@@ -10,21 +10,35 @@
     justify-content: flex-start;
 }
 
-/*@media (min-width: 780px) {
-    .contacts__details_point{
-    display: flex;
-    flex-direction: row;
-    column-gap: 40px;
+@media (min-width: 780px){
+    .contacts__details_point {
+        display: grid;
+        grid-template-columns: 100px 265px;
+        grid-template-rows: auto auto;
+        column-gap: 50px;
+        grid-template-areas: 
+        "sidebar main"
+        "sidebar main";
     }
+}
+
     .point-name {
-        display: flex;
-        flex-direction: row;
+        grid-area: sidebar;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
+
     .point-description {
-        display: flex;
-        flex-direction: column;
-    } 
-}*/
+        grid-area: main;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
 
 .contacts__intro-description {
     font-family: 'Rubik', sans-serif;
