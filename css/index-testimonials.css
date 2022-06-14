@@ -1,0 +1,153 @@
+.testimonials {
+    background: var(--background-color-light);
+    padding: 95px 28px;
+}
+
+.testimonials__description-text {
+    font-family: var(--rubik-font);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--dark-brown-color);
+    max-width: 770px;
+}
+
+.feedbacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background: var(--light-brown-color);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.feedbacks__back-btn {
+    top: 40%;
+    left: -20px;
+}
+
+.feedbacks__forward-btn {
+    top: 40%;
+    right: -20px;
+}
+
+.arrow {
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    color: var(--white-color);
+}
+
+.icon-arrow_back_ios {
+    padding-left: 4px;
+}
+
+.icon-arrow_forward_ios {
+    padding-left: 2px;
+}
+
+@media (min-width: 780px) {
+    .btn {
+        background: none;
+    }
+
+    .arrow {
+        color: var(--light-brown-color);
+        font-size: 32px;
+        padding: 0;
+    }
+}
+
+.feedbacks__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 760px;
+}
+
+.feedbacks__block>*:not(:nth-last-child(-n+2)) {
+    margin-bottom: 25px;
+}
+
+.feedbacks__block>*:nth-last-child(-n+2) {
+    margin-bottom: 48px;
+}
+
+.feedbacks__block-photo {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: 120px;
+    object-fit: cover;
+    object-position: 38% 5%;
+}
+
+@media (min-width: 780px) {
+    .feedbacks__block-photo {
+        width: 170px;
+    }
+}
+
+.feedbacks__block-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-btn-direction-color-light);
+    letter-spacing: 0.594px;
+}
+
+.feedbacks__block-text {
+    font-family: var(--rubik-font);
+    text-align: center;
+    font-size: 17px;
+    line-height: 29px;
+    color: var(--feedback-text-color);
+    letter-spacing: normal;
+    font-weight: 300;
+    padding: 0 11px;
+}
+
+.feedbacks__block-date {
+    color: var(--dark-brown-color);
+    letter-spacing: 1.6px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.feedbacks-wrapper__slider-round-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: default;
+    gap: 15px;
+}
+
+.feedbacks-wrapper__slider-round {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--light-brown-color);
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 26px;
+}
+
+.feedbacks-wrapper__slider-round:hover {
+    opacity: 0.8;
+}
