@@ -367,7 +367,7 @@ img {
 
 .blog__article--header {
     margin-top: 20px;
-    color: #f4eee1;
+    color: var(--background-color-light);
     font-size: 22px;
     font-weight: 700;
     line-height: 33px;
