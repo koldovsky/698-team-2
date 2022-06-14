@@ -54,7 +54,7 @@
 } */
 
 .brewery-text {
-    color: #f4eee1;
+    color: var(--background-color-light);
     font-family: Rubik, sans-serif;
     font-size: 20px;
     font-weight: 400;
