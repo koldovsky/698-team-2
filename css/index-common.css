@@ -17,11 +17,8 @@
     --titles-color-dark: #261d17;
     --text-color-light: #d2c9ba;
     --bestseller-title-ipa: #aecd4c;
-<<<<<<< HEAD
-    --feedback-text-color: #59444099
-=======
+    --feedback-text-color: #59444099;
     --border-color-light: #aa7c5a26;
->>>>>>> 923cf0eaf607c3caca731175587f57ae6bf40ada
 }
 
 * {
@@ -70,6 +67,7 @@ img {
     transition: 0.5s;
     width: fit-content;
 }
+
 .main-button-dark-green:hover {
     background-color: var(--main-btn-direction-color-light);
 }
