@@ -11,13 +11,9 @@ padding-left: 25px;
  margin-bottom: 33px;
 }
 .questions__title{
-  height: 113px;
-  width: 274px;
-  margin-bottom: 39px;
+  margin-top: 20px;
 }
 .questions_just-heading{
-  height: 119px;
-  width: 253px;
   font-size:35px;
   word-wrap: break-word;
 }
@@ -27,10 +23,8 @@ padding-left: 25px;
   margin-bottom: 40px;
 }
 .questions__wheat{
-  height: 32px;
-  width: 272px;
-  object-fit: contain;
-  margin-left: -82px;
+  width: 100px;
+  margin-top: 20px;
   margin-bottom: 33px;
 }
 .questions__text{
