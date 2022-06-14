@@ -1,0 +1,95 @@
+.tour {
+  background-color: rgb(248, 239, 227);
+}
+
+.tour__text {
+  text-align: center;
+}
+
+.tour__title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.ear__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info__text {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(151, 142, 24);
+  font-family: "Rubik", sans-serif;
+}
+
+.video__tour-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.video__play-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners_box {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.tour__partners {
+  font-size: 50px;
+}
+
+.info__work {
+  font-size: 25px;
+  color: rgb(41, 38, 8);
+  font-family: "Rubik", sans-serif;
+}
+
+@media (min-width: 900px) {
+  .beer_box {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    display: flex;
+  }
+}
+
+.info__partners {
+  font-size: 20px;
+  color: rgb(197, 183, 29);
+  font-family: "Rubik", sans-serif;
+}
+
+.brewing__co-img {
+  width: 280px;
+}
+.quality__beer-img {
+  width: 230px;
+}
+.beer__brewing-img {
+  width: 230px;
+}
+
+.quality__beer {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.beer__brewing {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.brewing__co {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
