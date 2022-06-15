@@ -25,13 +25,13 @@
     margin: 20px 0px 25px 0px;
 }
 .bestseller__subtitle {
-    color: var(--white-color);
+    color: var(--main-text-color);
     font-size: 22px;
     font-weight: 600;
     padding: 10px 0px 15px 0px;
 }
 .bestseller__title {
-    color: var(--light-xxx-color);
+    color: var(--main-titles-color);
     font-size: 34px;
     font-weight: 700;
     letter-spacing: 1.6px;
@@ -85,24 +85,24 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .info__item {
+    .bestseller-info__item {
         flex: 50%;
     }
 }
-.info__item:not(:last-child) {
+.bestseller-info__item:not(:last-child) {
     margin: 0px 0px 16px 0px;
 }
-.info__item-row {
+.bestseller-info__item-row {
     padding: 0px 0px 16px 0px;
 }
-.info__title {
+.bestseller-info__title {
 color: var(--background-color-light);
 font-size: 14px;
 font-weight: 600;
 padding: 0px 0px 8px 0px;
 }
-.info__text {
-    color: var(--white-color);
+.bestseller-info__text {
+    color: var(--main-text-color);
     font-weight: 700;
     font-size: 22px;
 }
