@@ -83,6 +83,7 @@
     justify-content: center;
     align-items: center;
     max-width: 760px;
+    flex: 1;
 }
 
 .feedbacks__block>*:not(:nth-last-child(-n+2)) {
