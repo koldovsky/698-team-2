@@ -10,7 +10,7 @@
  }
  .main__schedule-title{
      height: 218px;
-     color: var(--white-color);
+     color: var(--main-text-color);
      word-wrap: break-word;
  }
  .schedule-title__text{
@@ -19,7 +19,7 @@
      padding-top: 39px;
  }
  .schedule__decor-x{
-    color: var(--light-xxx-color);
+    color: var(--main-titles-color);
     font-size: 14px;
 }
 .main__schedule_wheat{
@@ -28,7 +28,7 @@
     object-fit: contain;
 }
 .main_schedule-text{
-    color: var(--white-color);
+    color: var(--main-text-color);
     word-wrap: break-word;
     font-size: 20px;
     line-height: 1.6;

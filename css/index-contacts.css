@@ -90,7 +90,7 @@
 
 .contacts__intro-description {
     font-family: 'Rubik', sans-serif;
-    color: var(--white-color);
+    color: var(--main-text-color);
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -135,7 +135,7 @@
 
 .point-name {
     font-family: 'Frank Ruhl Libre', serif;
-    color: var(--light-brown-color);
+    color: var(--unprimary-text-color);
     line-height: 33px;
     font-size: 22px;
     font-weight: 500;
@@ -155,12 +155,12 @@
 
 .point-description-contacts {
     font-family: Rubik, sans-serif;
-    color: var(--white-color);
+    color: var(--main-text-color);
     line-height: 28.9px;
 }
 
 .point-description-contacts:hover {
-    color: var(--light-xxx-color);
+    color: var(--main-titles-color);
 }
 
 .contacts__map {
@@ -180,7 +180,7 @@
 }
 
 .contacts__form {
-    background-color: #342924;
+    background-color: var(--events-background-color);
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -196,11 +196,11 @@
     margin: 10px auto 10px auto;
     border: 2px solid var(--border-color-light);
     border-radius: 25px;
-    background-color: #342924;
+    background-color: var(--events-background-color);
 }
 
 input::placeholder {
-    color: #858585d9;
+    color: var(--form-placeholder-color);
     text-align: center;
     font-size: 14px;
   }
@@ -212,7 +212,7 @@ input::placeholder {
     margin: 10px auto 10px auto;
     border: 2px solid var(--border-color-light);
     border-radius: 25px;
-    background-color: #342924; 
+    background-color: var(--events-background-color);
   }
 
   .contacts__form_button {
