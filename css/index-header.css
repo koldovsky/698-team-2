@@ -24,7 +24,7 @@
 }
 
 .header__banner-subtitle {
-    color: var(--light-xxx-color);
+    color: var(--main-titles-color);
     font-size: 14px;
     letter-spacing: .1em;
     line-height: 1.4285;
@@ -37,7 +37,7 @@
 .header__banner-title {
     margin-top: 20px;
     font-weight: 700;
-    color: var(--white-color);
+    color: var(--main-text-color);
     font-size: 58px;
     line-height: 1.1;
     letter-spacing: 0;
@@ -45,6 +45,7 @@
 
 .header__banner-wheat {
     margin-top: 35px;
+    margin-left: -20px;
 }
 
 .header__banner-wheat img {
@@ -57,7 +58,7 @@
     line-height: 1.7;
     letter-spacing: 0;
     font-weight: 400;
-    color: var(--light-brown-color);
+    color: var(--unprimary-text-color);
     font-family: Rubik, sans-serif;
     word-wrap: break-word;
 }
@@ -90,7 +91,7 @@
 }
 
 .header__banner-titleimage {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .header__banner-titleimage img {
