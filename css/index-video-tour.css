@@ -69,9 +69,11 @@
 .brewing__co-img {
   width: 280px;
 }
+
 .quality__beer-img {
   width: 230px;
 }
+
 .beer__brewing-img {
   width: 230px;
 }
@@ -93,10 +95,11 @@
   padding-right: 15px;
   text-align: center;
 }
-.ear__img{
+
+.ear__img {
   width: 100px;
 }
 
-.ear__picture-img{
-width: 200px;
+.ear__picture-img {
+  width: 200px;
 }

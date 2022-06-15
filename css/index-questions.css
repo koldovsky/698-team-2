@@ -1,33 +1,39 @@
-.questions__general{
-background-color:var(--background-color-light);
-display: flex;
-flex-direction: column;
-padding-left: 25px;
+.questions__general {
+  background-color: var(--background-color-light);
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
 }
-.questions__decor-x{
- font-size: 14px;
- height: 38.28px;
- width: 18px;
- margin-bottom: 33px;
+
+.questions__decor-x {
+  font-size: 14px;
+  height: 38.28px;
+  width: 18px;
+  margin-bottom: 33px;
 }
-.questions__title{
+
+.questions__title {
   margin-top: 20px;
 }
-.questions_just-heading{
-  font-size:35px;
+
+.questions_just-heading {
+  font-size: 35px;
   word-wrap: break-word;
 }
-.questions__for_image{
+
+.questions__for_image {
   height: 274px;
   width: 260px;
   margin-bottom: 40px;
 }
-.questions__wheat{
+
+.questions__wheat {
   width: 100px;
   margin-top: 20px;
   margin-bottom: 33px;
 }
-.questions__text{
+
+.questions__text {
   color: #614E43;
   font-size: 20px;
   font-weight: 400;
