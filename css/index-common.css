@@ -3,22 +3,23 @@
 
 :root {
     font-family: 'Frank Ruhl Libre', serif;
-    --rubik-font: 'Rubik', sans-serif;
+    --main-description-font: 'Rubik', sans-serif;
     scroll-behavior: smooth;
-    --light-xxx-color: #f8b803;
-    --dark-xxx-color: #965a1c;
-    --white-color: #fff;
-    --light-brown-color: #aa7c5a;
-    --dark-brown-color: #614e44;
+    --main-titles-color: #f8b803;
+    --title-separator-color: #965a1c;
+    --main-text-color: #fff;
+    --unprimary-text-color: #aa7c5a;
+    --main-light-section-text-color: #614e44;
     --background-color-light: #f4eee1;
     --background-color-dark: #2c221d;
     --main-btn-direction-color-light: #2c8536;
     --main-btn-direction-color-dark: #0c3b10;
-    --titles-color-dark: #261d17;
+    --titles-color: #261d17;
     --text-color-light: #d2c9ba;
     --bestseller-title-ipa: #aecd4c;
     --feedback-text-color: #59444099;
     --border-color-light: #aa7c5a26;
+    --events-background-color: #342924
 }
 
 * {
@@ -28,7 +29,7 @@
 
 a {
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--main-text-color);
 }
 
 img {
@@ -97,13 +98,13 @@ section {
 }
 
 .xxx-decor-light {
-    color: var(--light-xxx-color);
+    color: var(--main-titles-color);
     font-size: 14px;
     font-weight: 100;
 }
 
 .xxx-decor-dark {
-    color: var(--dark-xxx-color);
+    color: var(--title-separator-color);
     font-size: 14px;
     font-weight: 200;
     opacity: 0.7;
@@ -114,14 +115,14 @@ section {
 /* title of every sections */
 .block-title-light {
     font-size: 34px;
-    color: var(--white-color);
+    color: var(--main-text-color);
     font-weight: 500;
     letter-spacing: 1.6px;
 }
 
 .block-title-dark {
     font-size: 34px;
-    color: var(--titles-color-dark);
+    color: var(--titles-color);
     font-weight: 500;
     letter-spacing: 1.6px;
 }

@@ -4,12 +4,12 @@
 }
 
 .testimonials__description-text {
-    font-family: var(--rubik-font);
+    font-family: var(--main-description-font);
     font-weight: 300;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    color: var(--dark-brown-color);
+    color: var(--main-light-section-text-color);
     max-width: 770px;
 }
 
@@ -24,7 +24,7 @@
     position: absolute;
     border: none;
     border-radius: 50%;
-    background: var(--light-brown-color);
+    background: var(--unprimary-text-color);
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -50,7 +50,7 @@
     display: block;
     margin: auto;
     font-size: 15px;
-    color: var(--white-color);
+    color: var(--main-text-color);
 }
 
 .icon-arrow_back_ios {
@@ -67,7 +67,7 @@
     }
 
     .arrow {
-        color: var(--light-brown-color);
+        color: var(--unprimary-text-color);
         font-size: 32px;
         padding: 0;
     }
@@ -112,7 +112,7 @@
 }
 
 .feedbacks__block-text {
-    font-family: var(--rubik-font);
+    font-family: var(--main-description-font);
     text-align: center;
     font-size: 17px;
     line-height: 29px;
@@ -129,7 +129,7 @@
 }
 
 .feedbacks__block-date {
-    color: var(--dark-brown-color);
+    color: var(--main-light-section-text-color);
     letter-spacing: 1.6px;
     font-size: 14px;
     font-weight: 900;
@@ -148,7 +148,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--light-brown-color);
+    background-color: var(--unprimary-text-color);
     opacity: 0.3;
     border: none;
     cursor: pointer;
