@@ -20,31 +20,27 @@
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-.icon-arrow_forward_ios:before {
-  content: "\e900";
-}
+  .icon-arrow_forward_ios:before {
+    content: "\e900";
+  }
 
-.icon-arrow_back_ios:before {
-  content: "\e901";
-}
+  .icon-arrow_back_ios:before {
+    content: "\e901";
+  }
 
-.icon-facebook:before {
-  content: "\ea90";
-}
+  .icon-facebook:before {
+    content: "\ea90";
+  }
 
-.icon-instagram:before {
-  content: "\ea92";
-}
+  .icon-instagram:before {
+    content: "\ea92";
+  }
 
-.icon-twitter:before {
-  content: "\ea96";
-}
+  .icon-twitter:before {
+    content: "\ea96";
+  }
 
-.icon-linkedin:before {
-  content: "\eac9";
-}
+  .icon-linkedin:before {
+    content: "\eac9";
+  }
