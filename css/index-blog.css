@@ -12,7 +12,7 @@
 @media (min-width: 1200px) {
     .blog {
         padding: 30px 0 50px;
-        
+
     }
 }
 
@@ -164,18 +164,18 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 300px auto auto auto;
-        grid-template-areas: 
-        "picture picture picture"
-        "date date date"
-        "header header header"
-        "abstract abstract abstract";
+        grid-template-areas:
+            "picture picture picture"
+            "date date date"
+            "header header header"
+            "abstract abstract abstract";
         grid-column-gap: 30px;
         justify-items: flex-start;
         align-items: flex-start;
         margin-bottom: 200px;
         padding-bottom: 50px;
     }
-    
+
     .blog__img {
         grid-area: picture;
     }
@@ -192,5 +192,3 @@
         grid-area: content;
     }
 }
-
-    

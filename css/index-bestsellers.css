@@ -2,34 +2,41 @@
     background-color: var(--background-color-dark);
     padding: 90px 5px;
 }
+
 .bestseller {
     display: flex;
     flex-direction: column;
 }
+
 .apa {
     min-width: 450px;
     height: auto;
     transform: scale(1);
     margin-right: 100px;
 }
+
 @media (min-width: 768px) {
     .bestseller {
         flex-direction: row;
     }
 }
+
 .bestseller__decor-seeds {
     padding: 0px 0px 10px 0px;
     margin-left: -18px;
 }
+
 .bestseller__general-title {
     margin: 20px 0px 25px 0px;
 }
+
 .bestseller__subtitle {
     color: var(--main-text-color);
     font-size: 22px;
     font-weight: 600;
     padding: 10px 0px 15px 0px;
 }
+
 .bestseller__title {
     color: var(--main-titles-color);
     font-size: 34px;
@@ -37,28 +44,36 @@
     letter-spacing: 1.6px;
     padding: 10px 0;
 }
+
 @media (min-width: 768px) {
     .bestseller__title {
         font-size: 39px;
         width: 202px;
     }
+
     .bestseller__general-title {
         font-size: 39px;
     }
 }
+
 @media (min-width: 791px) {
     .bestseller__title {
         width: 349px;
     }
 }
+
 @media (min-width: 992px) {
-    .bestseller__general-title, .bestseller__title {
+
+    .bestseller__general-title,
+    .bestseller__title {
         font-size: 44px;
     }
 }
+
 .bestseller__title-ipa {
     color: var(--bestseller-title-ipa);
 }
+
 .bestseller__text {
     color: var(--text-color-light);
     font-family: 'Rubik', sans-serif;
@@ -68,42 +83,50 @@
     letter-spacing: 0.6px;
     padding: 5px 0;
 }
+
 .bestseller__decor-x {
     font-weight: 700;
 }
+
 .bestseller__content {
     padding: 0px 10px;
     margin: 50px 0px 0px 0px;
 }
+
 .bestseller__info {
     display: flex;
     flex-direction: column;
     margin: 25px 0px 90px 0px;
 }
+
 @media (min-width: 768px) {
     .bestseller__info {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .bestseller-info__item {
         flex: 50%;
     }
 }
+
 .bestseller-info__item:not(:last-child) {
     margin: 0px 0px 16px 0px;
 }
+
 .bestseller-info__item-row {
     padding: 0px 0px 16px 0px;
 }
+
 .bestseller-info__title {
-color: var(--background-color-light);
-font-size: 14px;
-font-weight: 600;
-padding: 0px 0px 8px 0px;
+    color: var(--background-color-light);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0px 0px 8px 0px;
 }
+
 .bestseller-info__text {
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 22px;
 }
-
