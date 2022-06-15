@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--titles-color-dark);
+  background-color: var(--titles-color);
 }
 
 .footer__nav_logo {
@@ -21,14 +21,14 @@
 
 .menu-link {
   display: flex;
-  color: var(--white-color);
+  color: var(--main-text-color);
   font-family: "Rubik", sans-serif;
   font-size: 17px;
   letter-spacing: 1px;
 }
 
 .menu-link:hover {
-  color: var(--light-xxx-color);
+  color: var(--main-titles-color);
 }
 
 .footer_separator {
