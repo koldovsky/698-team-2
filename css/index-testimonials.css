@@ -79,6 +79,7 @@
     justify-content: flex-start;
     align-items: center;
     max-width: 760px;
+    flex: 1;
 }
 
 .feedbacks__block>*:not(:nth-last-child(-n+2)) {
@@ -119,6 +120,12 @@
     letter-spacing: normal;
     font-weight: 300;
     padding: 0 11px;
+}
+
+@media (min-width: 780px) {
+    .feedbacks__block-text {
+        height: 40%;
+    }
 }
 
 .feedbacks__block-date {
