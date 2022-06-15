@@ -200,7 +200,7 @@
 }
 
 input::placeholder {
-    color: #858585d9;
+    color: var(--form-placeholder-color);
     text-align: center;
     font-size: 14px;
   }
@@ -212,7 +212,7 @@ input::placeholder {
     margin: 10px auto 10px auto;
     border: 2px solid var(--border-color-light);
     border-radius: 25px;
-    background-color: #342924; 
+    background-color: var(--events-background-color);
   }
 
   .contacts__form_button {

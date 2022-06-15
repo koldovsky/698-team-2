@@ -19,7 +19,8 @@
     --bestseller-title-ipa: #aecd4c;
     --feedback-text-color: #59444099;
     --border-color-light: #aa7c5a26;
-    --events-background-color: #342924
+    --events-background-color: #342924;
+    --form-placeholder-color: #858585d9;
 }
 
 * {
