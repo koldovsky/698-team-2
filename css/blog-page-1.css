@@ -2,19 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    font-family: 'Frank Ruhl Libre', serif;
-    scroll-behavior: smooth;
-    --light-xxx-color: #f8b803;
-    --dark-xxx-color: #965a1c;
-    --white-color: #fff;
-    --light-brown-color: #aa7c5a;
-    --dark-brown-color: #614e44;
-    --background-color-light: #f4eee1;
-    --background-color-dark: #2c221d;
-    --main-btn-direction-color-light: #2c8536;
-    --main-btn-direction-color-dark: #0c3b10;
-    --titles-color-dark: #261d17;
-    --text-color-light: #d2c9ba;
+  font-family: 'Frank Ruhl Libre', serif;
+  --main-description-font: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
+  --main-titles-color: #f8b803;
+  --title-separator-color: #965a1c;
+  --main-text-color: #fff;
+  --unprimary-text-color: #aa7c5a;
+  --main-light-section-text-color: #614e44;
+  --background-color-light: #f4eee1;
+  --background-color-dark: #2c221d;
+  --main-btn-direction-color-light: #2c8536;
+  --main-btn-direction-color-dark: #0c3b10;
+  --titles-color: #261d17;
+  --text-color-light: #d2c9ba;
+  --bestseller-title-ipa: #aecd4c;
+  --feedback-text-color: #59444099;
+  --border-color-light: #aa7c5a26;
+  --events-background-color: #342924
 }
 
 * {
@@ -40,7 +45,7 @@ img {
 
 /* for light green button/link (you should add your padding and font-size) */
 .main-button-light-green a {
-    color: var(--white-color);
+    color: var(--main-text-color);
     background-color: var(--main-btn-direction-color-light);
     border-radius: 50px;
     cursor: pointer;
@@ -54,7 +59,7 @@ img {
 
 /* for dark green button/link (you should add your padding and font-size) */
 .main-button-dark-green a {
-    color: var(--white-color);
+    color: var(--main-text-color);
     background-color: var(--main-btn-direction-color-dark);
     border-radius: 50px;
     cursor: pointer;
@@ -96,14 +101,14 @@ img {
 /* title of every sections */
 .block-title-light {
     font-size: 34px;
-    color: var(--white-color);
+    color: var(--main-text-color);
     font-weight: 700;
     letter-spacing: 1.6px;
 }
 
 .block-title-dark {
     font-size: 34px;
-    color: var(--titles-color-dark);
+    color: var(--titles-color);
     font-weight: 700;
     letter-spacing: 1.6px;
 }
@@ -121,7 +126,7 @@ img {
 
 .header {
   background-color: var(--background-color-dark);
-  color: var(--white-color);
+  color: var(--main-text-color);
   padding: 30px 0;
 }
 
@@ -223,16 +228,16 @@ img {
 
 .menu-link {
   text-decoration: none; 
-  color: var(--white-color);
-  font-family: Rubik, sans-serif;
+  color: var(--main-text-color);
+  font-family: var(--main-description-font);
   font-size: 17px;
   font-weight: 500;
 }
 
 .header__nav-contactinfo {
   text-decoration: none; 
-  color: var(--white-color);
-  font-family: Rubik, sans-serif;
+  color: var(--main-text-color);
+  font-family: var(--main-description-font);
   font-size: 17px;
   font-weight: 400;
 }
@@ -284,7 +289,7 @@ img {
 
 .blog__article--extended-data {
   margin-top: 12px;
-  color: var(--dark-brown-color);
+  color: var(--main-light-section-text-color);
   font-size: 14px;
   font-weight: 900;
   line-height: 20px;
@@ -296,7 +301,7 @@ img {
 
 
 .blog__article--extended-header {
-  color: var(--titles-color-dark);
+  color: var(--titles-color);
   font-size: 34px;
   font-weight: 700;
   line-height: 38px;
@@ -308,7 +313,7 @@ img {
 
 @media (min-width: 785px) {
   .blog__article--extended-header {
-    color: var(--titles-color-dark);
+    color: var(--titles-color);
     font-size: 44px;
     font-weight: 700;
     line-height: 48px;
@@ -329,8 +334,8 @@ img {
   margin-top: 24px;
   /* padding-top: 20px;
   padding-bottom: 20px; */
-  color: var(--dark-brown-color);
-  font-family: Rubik, sans-serif;
+  color: var(--main-light-section-text-color);
+  font-family: var(--main-description-font);
   font-size: 17px;
   font-weight: 400;
   line-height: 29px;
@@ -341,7 +346,7 @@ img {
 
 .blog__article--extended-subheader {
   margin-top: 20px;
-  color: var(--titles-color-dark);
+  color: var(--titles-color);
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;

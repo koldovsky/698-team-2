@@ -25,7 +25,7 @@
 }
 
 .brewery__decor-x {
-    color: var(--light-xxx-color);
+    color: var(--main-titles-color);
     font-size: 14px;
     font-weight: 900;
     letter-spacing: 1.4px;
@@ -33,7 +33,7 @@
 }
 
 .brewery__general-title {
-    color: var(--white-color);
+    color: var(--main-text-color);
     font-size: 34px;
     line-height: 38px;
     font-weight: 700;
@@ -55,7 +55,7 @@
 
 .brewery-text {
     color: var(--background-color-light);
-    font-family: Rubik, sans-serif;
+    font-family: var(--main-description-font);
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
