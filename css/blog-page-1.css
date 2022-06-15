@@ -351,3 +351,56 @@ img {
   font-weight: 700;
   line-height: 33px;
 }
+
+.footer {
+  background-color: var(--titles-color);
+}
+
+.footer__nav_logo {
+  width: 103px;
+  height: 63px;
+  display: flex;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.footer__nav_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  padding-top: 25px;
+  gap: 20px;
+}
+
+.menu-link {
+  display: flex;
+  color: var(--main-text-color);
+  font-family: var(--main-description-font);
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.menu-link:hover {
+  color: var(--light-xxx-color);
+}
+
+.footer_separator {
+  visibility: hidden;
+}
+
+.footer__rights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  gap: 15px;
+  color: var(--text-color-light);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 14px;
+  font-stretch: 100%;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
