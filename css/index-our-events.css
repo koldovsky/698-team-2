@@ -42,11 +42,11 @@
     }
 }
 
-.event__photo {
+.event__picture {
     align-self: stretch;
 }
 
-.event__photo img {
+.event__picture img {
     height: 100%;
     object-fit: cover;
 }
