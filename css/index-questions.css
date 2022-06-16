@@ -39,3 +39,25 @@
   font-weight: 400;
   word-wrap: break-word;
 }
+.question__acc-button{
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  transition: 0.4s;
+  background-color: var(--background-color-light);
+  font-family:  var(--main-description-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28.9px;
+  word-wrap: break-word;
+  text-align: left;
+  color: var(--main-light-section-text-color);
+  margin-left: -10px;
+}
+.question__acc-panel{
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
