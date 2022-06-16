@@ -1,7 +1,7 @@
 .questions__general {
   background-color: var(--background-color-light);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding-left: 25px;
 }
 
