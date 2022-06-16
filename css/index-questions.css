@@ -1,38 +1,35 @@
-.questions__general {
+.questions__general{
   background-color: var(--background-color-light);
   display: flex;
   flex-wrap: wrap;
   padding-left: 25px;
+  justify-content: center;
 }
-
 .questions__decor-x {
   font-size: 14px;
   height: 38.28px;
   width: 18px;
   margin-bottom: 33px;
 }
-
+.questions__accordeon-general{
+  max-width: 474px;
+}
 .questions__title {
   margin-top: 20px;
 }
-
 .questions_just-heading {
   font-size: 35px;
   word-wrap: break-word;
 }
-
 .questions__for_image {
-  height: 274px;
-  width: 260px;
   margin-bottom: 40px;
+  max-width: 478px;
 }
-
 .questions__wheat {
   width: 100px;
   margin-top: 20px;
   margin-bottom: 33px;
 }
-
 .questions__text {
   color: #614E43;
   font-size: 20px;
