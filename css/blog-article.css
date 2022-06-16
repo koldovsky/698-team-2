@@ -706,13 +706,14 @@ img {
       margin-left: 0;
     }
     .footer_separator {
-      display: flex;
-      height: 2px;
-      background-color: var(--events-background-color);
-      margin-left: 10%;
-      margin-right: 10%;
-      box-shadow: none;
-    }
+        display: flex;
+        height: 0.5px;
+        background-color: var(--main-text-color);
+        opacity: 0.3;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: none;
+      }
   }
   
   
