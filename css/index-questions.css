@@ -9,10 +9,10 @@
   font-size: 14px;
   height: 38.28px;
   width: 18px;
-  margin-bottom: 33px;
 }
 .questions__accordeon-general{
   max-width: 474px;
+  padding-top: 80px;
 }
 .questions__title {
   margin-top: 20px;
@@ -22,7 +22,6 @@
   word-wrap: break-word;
 }
 .questions__for_image {
-  margin-bottom: 40px;
   max-width: 478px;
 }
 .questions__wheat {
@@ -38,7 +37,7 @@
 }
 .question__acc-button{
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 0px;
   width: 100%;
   text-align: left;
   border: none;
@@ -51,10 +50,21 @@
   word-wrap: break-word;
   text-align: left;
   color: var(--main-light-section-text-color);
-  margin-left: -10px;
 }
 .question__acc-panel{
-  padding: 0 18px;
-  display: none;
   overflow: hidden;
+}
+hr{
+  opacity:0.2;
+  margin-top: 20px;
+}
+.icon__plus{
+height: 20px;
+width: 20px;
+color: var(--main-light-section-text-color);
+opacity: 8;
+}
+.questions__btn-icon{
+  display: flex;
+  align-items: center;
 }
