@@ -38,6 +38,7 @@
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 40px;
+    padding-bottom: 13px;
   }
   .footer__nav_menu {
     flex-direction: row;
@@ -45,12 +46,16 @@
   .footer__nav_logo {
     margin-left: 0;
   }
-
+  .footer_separator {
+    display: flex;
+    height: 2px;
+    background-color: var(--events-background-color);
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: none;
+  }
 }
 
-.footer_separator {
-  visibility: hidden;
-}
 
 .footer__rights {
   display: flex;
@@ -62,9 +67,18 @@
   gap: 15px;
   color: var(--text-color-light);
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 14px;
+  font-size: 16px;
   font-stretch: 100%;
   line-height: 20px;
   letter-spacing: 2px;
+}
 
+@media (min-width: 780px) {
+  .footer__rights {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+  }
 }
