@@ -9,6 +9,8 @@
     /* Do not repeat the image */
     background-attachment: fixed;
     padding: 125px 53px;
+    margin-left: 20px;
+    margin-top:30px;
 }
 
 .main__schedule-title {
@@ -19,8 +21,9 @@
 
 .schedule-title__text {
     height: 212px;
-    font-size: 48px;
+    font-size: 52px;
     padding-top: 39px;
+    
 }
 
 .schedule__decor-x {
