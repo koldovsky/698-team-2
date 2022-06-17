@@ -109,6 +109,7 @@
         justify-content: left;
         margin-bottom: 15px;
         gap: 10px;
+        width: 100%;
     }
 
     .contacts__container {
@@ -132,6 +133,14 @@
     .contacts__form {
         width: 45%;
         margin-right: 100px;
+    }
+
+    .point-description {
+        width: 60%;
+    }
+
+    .point-description-contacts {
+        width: 60%;
     }
 
 }
