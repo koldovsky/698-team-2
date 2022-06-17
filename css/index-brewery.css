@@ -94,6 +94,7 @@ color: rgb(150,90,28);
 .history__info__content {
     display: flex;
     align-content: center;
+    padding-left: 10px;
 }
 .history__component__first{
     font-family: rubik;
@@ -146,6 +147,7 @@ padding-bottom: 20px;
 .history__dates__container {
     display: flex;
     justify-content: center;
+    padding-left: 10px;
 }
 .history__info__item {
     margin: 35px 35px;
@@ -173,6 +175,9 @@ padding-bottom: 20px;
     margin-top: 50px;
     margin-bottom: 20px;
 
+}
+.events{
+    padding-left: 10px;
 }
 .events__header {
     display: flex;
