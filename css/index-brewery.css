@@ -109,6 +109,7 @@ padding-bottom: 20px;
     font-family: rubik;
     color: #aa7c5a;
     font-size: 17px;
+    line-height: 30px;
 }
 
 .history__discriprion{
@@ -116,7 +117,84 @@ padding-bottom: 20px;
     color:#aa7c5a;
     font-size: 17px;
     margin-top:50px;
+    line-height: 30px;
+    margin-left: 40px;
 }
-history__container__second{
-    margin-left: 25px;
+.brewery__today {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.signature__img {
+    max-width: 55px;
+    max-height: 65px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.signature {
+    display: flex;
+}
+.signature__John_Cliff{
+    margin-left: 30px;
+    margin-top: 70px;
+    font-style: italic;
+    color: #aa7c5a;
+    font-size: 25px;
+   font-weight: bold;
+}
+.history__dates__container {
+    display: flex;
+    justify-content: center;
+}
+.history__info__item {
+    margin: 35px 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.info__number{
+    font-size: 60px;
+    color:rgb(44,133,54);
+    font-weight: bold;
+}
+.info-description{
+    margin-top: 25PX;
+    font-family: rubik;
+    color: #614e44;
+    font-size: 15px;
+}
+.discover__beer {
+    background-color: var(--background-color-dark);
+    color: antiquewhite;
+}
+.events__separator{
+    color:rgb(248,184,3);
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+.events__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events__tittle {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.events__discription {
+    margin-top: 15px;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.events__gallery__image {
+    width: 250px;
+}
+}
+.events__gallery__slider {
+    display: flex;
+}
+.events__gallery {
+    display: flex;
 }
