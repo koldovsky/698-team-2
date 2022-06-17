@@ -127,6 +127,7 @@
     .contacts {
         display: flex;
         flex-direction: row;
+        height: auto;
 
     }
 
@@ -202,6 +203,13 @@
     padding: 30px;
     margin-top: 40px;
     gap: 20px;
+}
+
+@media (min-width: 780px) {
+    .contacts__form {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
 }
 
 .contacts__form_input {
