@@ -127,8 +127,8 @@ padding-bottom: 20px;
     margin-left: 40px;
 }
 .signature__img {
-    max-width: 55px;
-    max-height: 65px;
+    width: 55px;
+    height: 65px;
     margin-left: 40px;
     margin-top: 50px;
 }
