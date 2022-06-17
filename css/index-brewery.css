@@ -74,3 +74,49 @@
 .brewery-gallery__img {
     width: 250px;
 }
+/* Ivan */
+
+.historym__main{
+    background-color: var(--background-color-light);
+}
+.history__info__content{
+    padding-top: 50px;
+}
+.history__info__separator{
+color: rgb(150,90,28);
+}
+.history__title{
+    font-size: 44px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Frank Ruhl Libre;
+}
+.history__info__content {
+    display: flex;
+    align-content: center;
+}
+.history__component__first{
+    font-family: rubik;
+    color: #261d17;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.seeds-decor__picture{
+padding-bottom: 20px;
+}
+
+.history__component__second{
+    font-family: rubik;
+    color: #aa7c5a;
+    font-size: 17px;
+}
+
+.history__discriprion{
+    font-family: rubik;
+    color:#aa7c5a;
+    font-size: 17px;
+    margin-top:50px;
+}
+history__container__second{
+    margin-left: 25px;
+}
