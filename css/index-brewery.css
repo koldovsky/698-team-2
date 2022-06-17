@@ -189,12 +189,20 @@ padding-bottom: 20px;
     margin-bottom: 40px;
 }
 .events__gallery__image {
-    width: 250px;
+    max-width: 250px;
+    margin: 15px;
+    
 }
-}
+
 .events__gallery__slider {
     display: flex;
+    flex-direction: column;
 }
 .events__gallery {
     display: flex;
+    align-items: center
+}
+
+.events__gallery__discription__tasting{
+    margin-left: 40px;
 }
