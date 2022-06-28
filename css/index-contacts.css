@@ -208,7 +208,7 @@
 @media (min-width: 780px) {
     .contacts__form {
         margin-top: 0;
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
     }
 }
 
@@ -255,4 +255,74 @@ input::placeholder {
 
 .contacts__form_button:hover {
     background-color: var(--main-btn-direction-color-dark);
+}
+
+.contacts__party {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color-dark);
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+
+
+}
+
+.contacts__party_details_intro {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.contacts__party_container_day {
+    padding-top: 20px;
+}
+
+@media (min-width: 780px) {
+    .contacts__party_container_day {
+        padding-top: 0;
+    }
+}
+
+.contacts__party_day,.contacts__party_hour,.contacts__party_minute,.contacts__party_second {
+    text-align: center;
+}
+
+.contacts__party_countdown {
+    background-color: var(--events-background-color);
+    font-family: 'Rubik', sans-serif;
+    color: var(--main-text-color);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    align-self: center; 
+}
+
+@media (min-width: 780px) {
+    .contacts__party_countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 25px;
+    }
+
+}
+
+.contacts__party_container_subtitle {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contacts__party_advert {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    margin-top: 40px;
+}
+
+@media (min-width: 780px) {
+    .contacts__party_advert {
+        width: 50%;
+    }
 }
