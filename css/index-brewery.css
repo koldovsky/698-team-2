@@ -65,15 +65,33 @@
     vertical-align: baseline;
 }
 
-.brewery-gallery__images {
+.brewery-gallery__img--main {
+    padding-bottom: 10px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.brewery-gallery__images--thumbs {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .brewery-gallery__img {
-    width: 250px;
+    width: 15%;
+    object-fit: cover;
+    object-position: 50% 43.33%;
+    height: 39px;
+    width: 39px;
+    padding: 7.5px 3.75px 0px;
+    -webkit-tap-highlight-color: transparent;
 }
+
+
+
+
+
 /* Ivan */
 
 .historym__main{

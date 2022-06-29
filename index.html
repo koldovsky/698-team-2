@@ -649,20 +649,39 @@
                     beer with love and attention to detail.</p>
             </div>
             <div class="brewery-gallery__images">
-                <img src="img/brewery-gallery/gallery2-photo1.png"
+                <div class="brewery-gallery__images--main">
+                    <img src="img/brewery-gallery/gallery2-photo1.png"
                     alt="Two bearded men in a brewery with bottles on the foreground" style="max-width:400px;"
-                    class="brewery-gallery__img">
-                <img src="img/brewery-gallery/gallery2-photo2.png" alt="Beer barrels in a brewery"
-                    style="max-width:400px;" class="brewery-gallery__img">
-                <img src="img/brewery-gallery/gallery2-photo3.png" alt="beer bottles production line"
-                    style="max-width:400px;" class="brewery-gallery__img">
-                <img src="img/brewery-gallery/gallery2-photo4.png" alt="A bearded man holding a beer barrel"
-                    style="max-width:400px;" class="brewery-gallery__img">
-                <img src="img/brewery-gallery/gallery2-photo5.png" alt="Two men working in a brewery"
-                    style="max-width:400px;" class="brewery-gallery__img">
-                <img src="img/brewery-gallery/gallery2-photo6.png"
-                    alt="Close-up of brown beer bottles on a production line" style="max-width:400px;"
-                    class="brewery-gallery__img">
+                    class="brewery-gallery__img--main">
+                </div>
+                <div class="brewery-gallery__images--thumbs">
+                    <div>
+                        <img src="img/brewery-gallery/gallery2-photo1.png"
+                            alt="Two bearded men in a brewery with bottles on the foreground" style="max-width:400px;"
+                            class="brewery-gallery__img slide1" onclick="nextSlide(1)">
+                    </div>
+                    <div>
+                        <img src="img/brewery-gallery/gallery2-photo2.png" alt="Beer barrels in a brewery"
+                            style="max-width:400px;" class="brewery-gallery__img slide2" onclick="nextSlide(2)">
+                    </div>
+                    <div>
+                        <img src="img/brewery-gallery/gallery2-photo3.png" alt="beer bottles production line"
+                            style="max-width:400px;" class="brewery-gallery__img slide3" onclick="nextSlide(3)">
+                    </div>
+                    <div>
+                        <img src="img/brewery-gallery/gallery2-photo4.png" alt="A bearded man holding a beer barrel"
+                            style="max-width:400px;" class="brewery-gallery__img slide 4" onclick="nextSlide(4)">
+                    </div>
+                    <div>
+                        <img src="img/brewery-gallery/gallery2-photo5.png" alt="Two men working in a brewery"
+                            style="max-width:400px;" class="brewery-gallery__img slide5" onclick="nextSlide(5)">
+                    </div>
+                    <div>
+                    <img src="img/brewery-gallery/gallery2-photo6.png"
+                        alt="Close-up of brown beer bottles on a production line" style="max-width:400px;"
+                        class="brewery-gallery__img slide6" onclick="nextSlide(6)">
+                    </div>
+                </div>
             </div>
         </section>
         <img class="page-separator" src="img/page-separator.svg" alt="Bottom Page Separator">
@@ -854,6 +873,7 @@
     </footer>
     <script src="js/index-testimonials.js"></script>
     <script src="js/index-contacts.js"></script>
+    <script src="js/index-brewery-gallery.js"></script>
 </body>
 
 </html>
