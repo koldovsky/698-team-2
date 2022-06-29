@@ -16,5 +16,3 @@ menuLinks.forEach(menuLink => {
     document.body.classList.remove("lock");
   });
 })
-
-
