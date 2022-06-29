@@ -58,6 +58,10 @@
     z-index: 5;
 }
 
+.burger.active {
+    
+}
+
 .burger span,
 .burger::before,
 .burger::after {
@@ -170,6 +174,10 @@
 }
 
 @media (max-width: 991px) {
+    body.lock {
+        overflow: hidden;
+    }
+
     .header__nav-menu {
         display: block;
         position: fixed;
@@ -179,7 +187,10 @@
         height: 100%;
         background-color: var(--background-color-dark);
         margin: auto;
-        overflow: hidden;
+    }
+
+    .header__nav-menu.active {
+        top: 0;
     }
 
     .header__nav-pages {
