@@ -65,51 +65,58 @@
     vertical-align: baseline;
 }
 
+.brewery-gallery__images {
+    position: relative;
+}
+
 .brewery-gallery__img--main {
     padding-bottom: 10px;
     height: 20%;
     object-fit: cover;
 }
 
-.btn {
+.brewery-gallery__slider {
     position: absolute;
-    border: none;
-    border-radius: 50%;
-    background: var(--main-text-color);
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    opacity: 0.7;
-    transition: 0.5s;
+    left: 10px;
+    right: 10px;
+    top: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.btn:hover {
+.brewery-gallery__slider_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media (min-width: 470px) {
+    .brewery-gallery__slider {
+        top: 28vw;
+    }
+    
+    .brewery-gallery__slider_button {
+        width: 32px;
+        height: 32px;
+
+    }
+    
+}
+
+.brewery-gallery__slider_button:hover {
     opacity: 1;
 }
 
-.brewery-gallery__back-btn {
-    top: 45%;
-    left: -20px;
-}
-
-.brewery-gallery__forward-btn {
-    top: 45%;
-    right: -20px;
-}
-
-.arrow {
-    display: block;
-    margin: auto;
-    font-size: 15px;
-    color: var(--background-color-dark);
-}
-
-.icon-arrow_back_ios {
-    padding-left: 4px;
-}
-
-.icon-arrow_forward_ios {
-    padding-left: 2px;
+.brewery-gallery__slider_button-image {
+    width: 15px;
+    height: 15px;
 }
 
 .brewery-gallery__images--thumbs {
@@ -138,6 +145,10 @@
 }
 
 @media (min-width: 770px) {
+    .brewery-gallery__slider {
+        top: 35%;
+    }
+    
     .brewery-gallery__img--main {
         padding-bottom: 20px;
         width: 100%;
@@ -162,6 +173,10 @@
 }
 
 @media (min-width: 1024px) {
+    .brewery-gallery__slider {
+        top: 40%;
+    }
+    
     .brewery-gallery__img--main {
         padding-bottom: 20px;
         width: 100%;
@@ -179,11 +194,26 @@
     .brewery-gallery__img {
         object-fit: cover;
         object-position: 50% 43.33%;
+        height: 12vw;
+        width: 12vw;
+        padding: 10px 0px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .brewery-gallery__slider {
+        top: 38%;
+    }
+
+    .brewery-gallery__img {
+        object-fit: cover;
+        object-position: 50% 43.33%;
         height: 9vw;
         width: 9vw;
         padding: 10px 0px;
     }
 }
+
 
 
 /* Ivan */
