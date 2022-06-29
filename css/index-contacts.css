@@ -291,7 +291,8 @@ input::placeholder {
 .contacts__party_countdown {
     background-color: var(--events-background-color);
     font-family: 'Rubik', sans-serif;
-    color: var(--main-text-color);
+    /*color: var(--main-text-color);*/
+    color: var(--unprimary-text-color);
     font-size: 30px;
     font-weight: 400;
     line-height: 32px;
@@ -312,6 +313,8 @@ input::placeholder {
     font-size: 15px;
     text-align: center;
     padding-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--text-color-light);
 }
 
 .contacts__party_advert {
@@ -319,6 +322,7 @@ input::placeholder {
     align-self: center;
     display: flex;
     margin-top: 40px;
+    padding-bottom: 40px;
 }
 
 @media (min-width: 780px) {
