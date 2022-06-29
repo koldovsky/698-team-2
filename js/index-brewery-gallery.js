@@ -5,7 +5,6 @@
 //   thumbs.classList.toggle("active");
 // });
 
-
 // function nextSlide(num) {
 //   const thumb = 'img/brewery-gallery/gallery2-photo' + num + '.png';
 //   document.querySelector('.brewery-gallery__img--main').src = thumb;
@@ -15,7 +14,7 @@
 //   thumb.addEventListener('click',
 //      () => nextSlide(i);
 //    )
-// } 
+// }
 
 // function showSlide(slideNum) {
 //   slideIdx = slideNum;
@@ -27,7 +26,7 @@
 // button.addEventListener('click',
 //    () => showSlide(i);
 //  )
-// } 
+// }
 
 // const thumbSlideOne = document.querySelector('.slide1');
 // thumbSlideOne.addEventListener('click', nextSlide(1), reset());
@@ -48,7 +47,6 @@
 // thumbSlideSix.addEventListener('click', nextSlide(6), reset());
 
 (function () {
-
   const slides = [
     `<div>
     <img src="img/brewery-gallery/gallery2-photo1.png"
@@ -75,13 +73,15 @@
     <img src="img/brewery-gallery/gallery2-photo6.png"
         alt="Close-up of brown beer bottles on a production line"
         class="brewery-gallery__img--main slide6">
-    </div>`
-  ]
+    </div>`,
+  ];
 
   let slideIdx = 0;
 
   function showCurrentSlide() {
-    const slideContainer = document.querySelector('.brewery-gallery__images--main');
+    const slideContainer = document.querySelector(
+      ".brewery-gallery__images--main"
+    );
     slideContainer.innerHTML = slides[slideIdx];
   }
 
@@ -97,22 +97,45 @@
 
   showCurrentSlide();
 
-  const nextButton = document.querySelector('.brewery-gallery__slider_button-right');
-  nextButton.addEventListener('click', nextSlide);
-  const prevButton = document.querySelector('.brewery-gallery__slider_button-left');
-  prevButton.addEventListener('click', prevSlide);
+  const nextButton = document.querySelector(
+    ".brewery-gallery__slider_button-right"
+  );
+  nextButton.addEventListener("click", nextSlide);
 
-  // function showSlide(slideNum) {
-  //     slideIdx = slideNum;
-  //     showCurrentSlide();
-  //   }
-    
-  //   const thumbnails = document.querySelectorAll('.brewery-gallery__img thumbnail');
-  //   for (let i = 0; i < thumbnail.length; i++) {
-  //   thumbnails.addEventListener('click',
-  //      () => showSlide(i);
-  //    )
-  //   } 
+  const prevButton = document.querySelector(
+    ".brewery-gallery__slider_button-left"
+  );
+  prevButton.addEventListener("click", prevSlide);
 
+  const thumbnails = document.querySelectorAll(".brewery-gallery__img");
+  for (const thumbnail of thumbnails) {
+    thumbnail.addEventListener("click", function () {
+      let current = document.getElementsByClassName("active");
+      if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+      }
+      thumbnail.classList.add("active");
+    });
+  }
 
-})()
+  function showSlide(slideNum) {
+    slideIdx = slideNum;
+    showCurrentSlide();
+  }
+
+  const thumbs = document.querySelectorAll(".thumbnail");
+  for (const thumb of thumbs) {
+    thumb.addEventListener("click", function () {
+      for (let i = 0; i < thumbs.length; i++) {
+        showSlide(i);
+      }
+    });
+  }
+})();
+
+// const thumbs = document.querySelectorAll(".thumbnail");
+// for (const thumb of thumbs) {
+//   for (let i = 0; i < thumbs.length; i++) {
+//     thumb.addEventListener("click", () => showSlide(i));
+//   }
+// }

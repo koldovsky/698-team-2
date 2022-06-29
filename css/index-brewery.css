@@ -101,13 +101,13 @@
     .brewery-gallery__slider {
         top: 28vw;
     }
-    
+
     .brewery-gallery__slider_button {
         width: 32px;
         height: 32px;
 
     }
-    
+
 }
 
 .brewery-gallery__slider_button:hover {
@@ -148,21 +148,26 @@
     .brewery-gallery__slider {
         top: 35%;
     }
-    
+
     .brewery-gallery__img--main {
         padding-bottom: 20px;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+
+    .brewery-gallery__slider_button-image {
+        width: 20px;
+        height: 20px;
+    }
+
     .brewery-gallery__images--thumbs {
         display: flex;
         margin: auto;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .brewery-gallery__img {
         object-fit: cover;
         object-position: 50% 43.33%;
@@ -176,21 +181,21 @@
     .brewery-gallery__slider {
         top: 40%;
     }
-    
+
     .brewery-gallery__img--main {
         padding-bottom: 20px;
         width: 100%;
         height: 75vh;
         object-fit: cover;
     }
-    
+
     .brewery-gallery__images--thumbs {
         display: flex;
         margin: auto;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .brewery-gallery__img {
         object-fit: cover;
         object-position: 50% 43.33%;
@@ -208,137 +213,171 @@
     .brewery-gallery__img {
         object-fit: cover;
         object-position: 50% 43.33%;
+        height: 11vw;
+        width: 11vw;
+        padding: 10px 0px;
+    }
+
+    .brewery-gallery__slider_button-image {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .brewery-gallery__img {
+        object-fit: cover;
+        object-position: 50% 43.33%;
         height: 9vw;
         width: 9vw;
         padding: 10px 0px;
     }
 }
 
-
-
 /* Ivan */
 
-.historym__main{
+.historym__main {
     background-color: var(--background-color-light);
 }
-.history__info__content{
+
+.history__info__content {
     padding-top: 50px;
 }
-.history__info__separator{
-color: rgb(150,90,28);
+
+.history__info__separator {
+    color: rgb(150, 90, 28);
 }
-.history__title{
+
+.history__title {
     font-size: 44px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: Frank Ruhl Libre;
 }
+
 .history__info__content {
     display: flex;
     align-content: center;
     padding-left: 10px;
 }
-.history__component__first{
+
+.history__component__first {
     font-family: rubik;
     color: #261d17;
     font-size: 20px;
     padding-bottom: 30px;
 }
-.seeds-decor__picture{
-padding-bottom: 20px;
+
+.seeds-decor__picture {
+    padding-bottom: 20px;
 }
 
-.history__component__second{
+.history__component__second {
     font-family: rubik;
     color: #aa7c5a;
     font-size: 17px;
     line-height: 30px;
 }
 
-.history__discriprion{
+.history__discriprion {
     font-family: rubik;
-    color:#aa7c5a;
+    color: #aa7c5a;
     font-size: 17px;
-    margin-top:50px;
+    margin-top: 50px;
     line-height: 30px;
     margin-left: 40px;
 }
+
 .brewery__today {
     font-size: 20px;
     line-height: 30px;
     margin-top: 20px;
     margin-left: 40px;
 }
+
 .signature__img {
     width: 55px;
     height: 65px;
     margin-left: 40px;
     margin-top: 50px;
 }
+
 .signature {
     display: flex;
 }
-.signature__John_Cliff{
+
+.signature__John_Cliff {
     margin-left: 30px;
     margin-top: 70px;
     font-style: italic;
     color: #aa7c5a;
     font-size: 25px;
-   font-weight: bold;
+    font-weight: bold;
 }
+
 .history__dates__container {
     display: flex;
     justify-content: center;
     padding-left: 10px;
 }
+
 .history__info__item {
     margin: 35px 35px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.info__number{
+
+.info__number {
     font-size: 60px;
-    color:rgb(44,133,54);
+    color: rgb(44, 133, 54);
     font-weight: bold;
 }
-.info-description{
+
+.info-description {
     margin-top: 25PX;
     font-family: rubik;
     color: #614e44;
     font-size: 15px;
 }
+
 .discover__beer {
     background-color: var(--background-color-dark);
     color: antiquewhite;
 }
-.events__separator{
-    color:rgb(248,184,3);
+
+.events__separator {
+    color: rgb(248, 184, 3);
     margin-top: 50px;
     margin-bottom: 20px;
 
 }
-.events{
+
+.events {
     padding-left: 10px;
 }
+
 .events__header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .events__tittle {
     font-size: 45px;
     margin-bottom: 20px;
 }
+
 .events__discription {
     margin-top: 15px;
     font-size: 22px;
     margin-bottom: 40px;
 }
+
 .events__gallery__image {
     max-width: 250px;
     margin: 15px;
-    
+
 }
 
 .events__gallery__slider {
@@ -347,6 +386,7 @@ padding-bottom: 20px;
     justify-content: center;
     position: relative;
 }
+
 .events__gallery {
     display: flex;
     flex-direction: column;
