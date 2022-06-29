@@ -84,6 +84,16 @@
     height: 12vw;
     width: 12vw;
     padding: 7.5px 3.75px 0px;
+    filter: brightness(50%);
+}
+
+.brewery-gallery__img:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.active {
+    filter: brightness(100%);
 }
 
 @media (min-width: 770px) {
