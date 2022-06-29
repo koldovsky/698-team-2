@@ -72,8 +72,9 @@
 
 .feedbacks {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -84,6 +85,14 @@
     align-items: center;
     max-width: 760px;
     flex: 1;
+}
+
+.carousel__item {
+    display: none;
+}
+
+.carousel__item-selected {
+    display: flex;
 }
 
 .feedbacks__block>*:not(:nth-last-child(-n+2)) {
@@ -144,6 +153,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     cursor: default;
     gap: 15px;
 }
@@ -157,6 +167,10 @@
     border: none;
     cursor: pointer;
     margin-bottom: 26px;
+}
+
+.carousel__button-selected {
+    opacity: 0.8;
 }
 
 .feedbacks-wrapper__slider-round:hover {
