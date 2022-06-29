@@ -12,6 +12,7 @@ const menuLinks = document.querySelectorAll(".menu-link");
 menuLinks.forEach(menuLink => {
   menuLink.addEventListener("click", function () {
     menuBody.classList.remove("active");
+    iconBurger.classList.remove("active");
     document.body.classList.remove("lock");
   });
 })
