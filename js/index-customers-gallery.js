@@ -13,7 +13,7 @@
     alt="A few people have fun by drinking beer"
     class="customers-gallery-photo2"
   />
-</div>`,
+ </div>`,
 `<div class="customers-gallery__img">
 <img
   src="img/customers-gallery/customers-gallery-photo3.png"
@@ -42,14 +42,18 @@
   function showCurrentSlide() {
     const slideContainer = document.querySelector('.customers-gallery .customers-gallery__images');
     slideContainer.innerHTML = slides[slideIdx];
-    const secondSlideIdx = slideIdx + 1 >= slides.length ? 0 : slideIdx + 1;
-    slideContainer.innerHTML += slides[secondSlideIdx];
-    const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
-    slideContainer.innerHTML += slides[thirdSlideIdx];
-    const fourthSlideIdx = thirdSlideIdx + 1 >= slides.length ? 0 : thirdSlideIdx + 1;
-    slideContainer.innerHTML += slides[fourthSlideIdx];
-    const fivethSlideIdx = fourthSlideIdx + 1 >= slides.length ? 0 : fourthSlideIdx + 1;
-    slideContainer.innerHTML += slides[fivethSlideIdx];
+    if (window.matchMedia('(min-width: 470px)').matches) {
+      const secondSlideIdx = slideIdx + 1 >= slides.length ? 0 : slideIdx + 1;
+      slideContainer.innerHTML += slides[secondSlideIdx];
+      if (window.matchMedia('(min-width: 641px)').matches) {
+        const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
+        slideContainer.innerHTML += slides[thirdSlideIdx];
+        const fourthSlideIdx = thirdSlideIdx + 1 >= slides.length ? 0 : thirdSlideIdx + 1;
+        slideContainer.innerHTML += slides[fourthSlideIdx];
+        const fifthSlideIdx = fourthSlideIdx + 1 >= slides.length ? 0 : fourthSlideIdx + 1;
+        slideContainer.innerHTML += slides[fifthSlideIdx];
+      }
+    }
   }
 
 function nextSlide() {
