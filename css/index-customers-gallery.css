@@ -3,12 +3,50 @@
   justify-content: space-between;
   height: 303px;
   overflow: hidden; 
+  position: relative;
 }
 
-    /* .customers-gallery__images {  
-  height: 303px;
-  overflow: hidden; 
- }  */
+.customers-gallery__btn {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  background: var(--background-color-dark);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.customers-gallery__btn:hover {
+  opacity: 1;
+}
+.customers-gallery__btn-prev {
+  top: 45%;
+  left: 10px;
+}
+.customers-gallery__btn-next {
+  top: 45%;
+  right: 10px;
+}
+.customers-gallery__arrow {
+  display: block;
+  margin: auto;
+  font-size: 15px;
+  color: var(--text-color-light);
+}
+.customers-gallery__arrow-back {
+  padding-left: 6px;
+} 
+
+@media (min-width: 780px) {
+  .customers-gallery__btn {
+    width: 26px;
+    height: 26px;
+  }
+  .customers-gallery__arrow {
+      font-size: 24px;
+  }
+}
 
  .customers-gallery__img {
   height: 303px;
