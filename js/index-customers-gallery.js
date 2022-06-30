@@ -42,7 +42,7 @@
   function showCurrentSlide() {
     const slideContainer = document.querySelector('.customers-gallery .customers-gallery__images');
     slideContainer.innerHTML = slides[slideIdx];
-    if (window.matchMedia('(min-width: 470px)').matches) {
+    if (window.matchMedia('(min-width: 321px)').matches) {
       const secondSlideIdx = slideIdx + 1 >= slides.length ? 0 : slideIdx + 1;
       slideContainer.innerHTML += slides[secondSlideIdx];
       if (window.matchMedia('(min-width: 641px)').matches) {
