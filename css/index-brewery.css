@@ -112,6 +112,7 @@
 
 .brewery-gallery__slider_button:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .brewery-gallery__slider_button-image {
@@ -142,6 +143,7 @@
 
 .brewery-gallery__img.active {
     filter: brightness(100%);
+    cursor: pointer;
 }
 
 @media (min-width: 770px) {

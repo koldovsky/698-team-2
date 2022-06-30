@@ -126,18 +126,7 @@
   }
 
   const thumbs = document.querySelectorAll(".thumbnail");
-  for (const thumb of thumbs) {
-    thumb.addEventListener("click", function () {
-      for (let i = 0; i < thumbs.length; i++) {
-        showSlide(i);
-      }
-    });
+  for (let i = 0; i < thumbs.length; i++) {
+    thumbs[i].addEventListener("click", () => showSlide(i));
   }
 })();
-
-// const thumbs = document.querySelectorAll(".thumbnail");
-// for (const thumb of thumbs) {
-//   for (let i = 0; i < thumbs.length; i++) {
-//     thumb.addEventListener("click", () => showSlide(i));
-//   }
-// }
