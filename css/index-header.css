@@ -6,7 +6,7 @@
 }
 
 .header__contacts {
-    background-color: #27201E;
+    background-color: var(--header-menu-background-color);
     max-width: 100%;
 }
 
@@ -151,7 +151,7 @@
     margin-top: 80px;
     margin-left: -10px;
     font-weight: 400;
-    font-family: Rubik, sans-serif;
+    font-family: var (--main-description-font);
     font-size: 15.4px;
     line-height: 1em;
     letter-spacing: 0;
@@ -283,7 +283,6 @@
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 5px;
-        /* min-width: 480px; */
     }
 
     .header__nav-pages>.menu-link {
