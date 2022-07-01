@@ -7,10 +7,10 @@
     });
 
     carousel.insertAdjacentHTML("beforeend", `
-    <div class="feedbacks-wrapper__slider-round-block">
-      ${buttonsHtml.join(" ")}
-    </div>
-  `);
+      <div class="feedbacks-wrapper__slider-round-block">
+        ${buttonsHtml.join(" ")}
+      </div>
+    `);
 
     const buttons = carousel.querySelectorAll(".feedbacks-wrapper__slider-round");
 
@@ -21,15 +21,6 @@
       items[slideIdx].classList.add("carousel__item-selected");
       buttons[slideIdx].classList.add("carousel__button-selected");
     };
-
-    buttons.forEach((button, i) => {
-      button.addEventListener("click", () => {
-        changeSlide(i);
-      });
-    });
-
-    items[0].classList.add("carousel__item-selected");
-    buttons[0].classList.add("carousel__button-selected");
 
     function getCurrenSlideIdx() {
       const currentSlideIdx = Array.from(items).findIndex((item) => {
@@ -52,10 +43,17 @@
       changeSlide(nextSlideIdx);
     }
 
+    buttons.forEach((button, i) => {
+      button.addEventListener("click", () => {
+        changeSlide(i);
+      });
+    });
+
+    items[0].classList.add("carousel__item-selected");
+    buttons[0].classList.add("carousel__button-selected");
+
     carousel.querySelector(".feedbacks__back-btn").addEventListener("click", prevSlide);
     carousel.querySelector(".feedbacks__forward-btn").addEventListener("click", nextSlide);
 
-
   });
-
 })();
