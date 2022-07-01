@@ -80,7 +80,7 @@
       <img
         src="${bestseller.beerImage}"
         alt="${bestseller.beerImagealt}"
-        class="${className}"
+        class="${bestseller.className}"
       />
     </div>
     <div class="bestseller__content">
