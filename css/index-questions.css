@@ -53,6 +53,7 @@
 }
 .question__acc-panel{
   overflow: hidden;
+  display: none;
 }
 hr{
   opacity:0.2;
