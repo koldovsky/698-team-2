@@ -72,10 +72,13 @@
 
 .feedbacks {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
     position: relative;
+    min-height: 536px;
+    overflow: hidden;
 }
 
 .feedbacks__block {
@@ -83,16 +86,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 760px;
-    flex: 1;
 }
 
 .carousel__item {
-    display: none;
+    transform: scale(0);
 }
 
 .carousel__item-selected {
-    display: flex;
+    position: absolute;
+    max-width: 760px;
+    transform: scale(1);
+    transition: all 1s;
+    padding: 0 20px;
 }
 
 .feedbacks__block>*:not(:nth-last-child(-n+2)) {

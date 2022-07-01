@@ -6,7 +6,7 @@
 }
 
 .header__contacts {
-    background-color: #27201E;
+    background-color: var(--header-menu-background-color);
     max-width: 100%;
 }
 
@@ -151,7 +151,7 @@
     margin-top: 80px;
     margin-left: -10px;
     font-weight: 400;
-    font-family: Rubik, sans-serif;
+    font-family: var(--main-description-font);
     font-size: 15.4px;
     line-height: 1em;
     letter-spacing: 0;
@@ -168,6 +168,10 @@
     width: fit-content;
 }
 
+.button-light-green:hover {
+    background-color: var(--main-btn-direction-color-dark);
+}
+
 .button-dark-green {
     padding: 17px 50px;
     margin: 10px;
@@ -178,6 +182,10 @@
     display: inline-block;
     width: fit-content;
 
+}
+
+.button-dark-green:hover {
+    background-color: var(--main-btn-direction-color-light);
 }
 
 .header__banner-titleimage {
@@ -283,7 +291,6 @@
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 5px;
-        /* min-width: 480px; */
     }
 
     .header__nav-pages>.menu-link {
