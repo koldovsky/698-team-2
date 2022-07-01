@@ -1,81 +1,86 @@
-(function() {
-const bestsellers = [
-{ 
- id: "stout",
- beerImage: "img/our-bestsellers-stout.png",
- name: "Our Bestsellers",
- seedsImage: "img/seeds-decor.svg",
- subtitle: "WHEAT MALT",
- title: "IMPERIAL STOUT",
- description: `A hallmark of this beer is that it is made from 8 different
+(function () {
+  const bestsellers = [
+    {
+      id: "stout",
+      className: "stout",
+      beerImage: "img/our-bestsellers-stout.png",
+      beerImagealt: "Picture of Imperial Stout Beer",
+      name: "Our Bestsellers",
+      seedsImage: "img/seeds-decor.svg",
+      subtitle: "WHEAT MALT",
+      title: "IMPERIAL STOUT",
+      description: `A hallmark of this beer is that it is made from 8 different
  varieties of malt and 3 varieties of hops.<br />
  Thanks to this, it is possible to achieve an amazing, unique
  taste of strong beer. The highlight of our imperial stout is a
  light chocolate flavor.`,
- infoTitle1: "EXTRACT",
- infoText1: "18,00%",
- infoTitle2: "ALCOHOL",
- infoText2: "9%",
- infoTitle3: "IBU",
- infoText3: "28",
- infoTitle4: "SERVING TEMPERATURE",
- infoText4: "5-7 °C",
-},
-{ 
-  id: "ipa",
-  beerImage: "img/our-bestsellers-ipa.png",
-  name: "Our Bestsellers",
-  seedsImage: "img/seeds-decor.svg",
-  subtitle: "MALT",
-  title: "INDIAN PALE ALE",
-  description: `The main feature of this beer is that historically it was made
+      infoTitle1: "EXTRACT",
+      infoText1: "18,00%",
+      infoTitle2: "ALCOHOL",
+      infoText2: "9%",
+      infoTitle3: "IBU",
+      infoText3: "28",
+      infoTitle4: "SERVING TEMPERATURE",
+      infoText4: "5-7 °C",
+    },
+    {
+      id: "ipa",
+      className: "ipa",
+      beerImage: "img/our-bestsellers-ipa.png",
+      beerImagealt: "Picture of Indian Pale Ale",
+      name: "Our Bestsellers",
+      seedsImage: "img/seeds-decor.svg",
+      subtitle: "MALT",
+      title: "INDIAN PALE ALE",
+      description: `The main feature of this beer is that historically it was made
   very strong, the strength reached 12%.<br />
   However, with the development of brewing, we began to move away
   from the excessive strength, stopping at a reasonable value -
   5.5-6%.`,
-  infoTitle1: "EXTRACT",
-  infoText1: "16,00%",
-  infoTitle2: "ALCOHOL",
-  infoText2: "5,7%",
-  infoTitle3: "IBU",
-  infoText3: "39",
-  infoTitle4: "SERVING TEMPERATURE",
-  infoText4: "10 °C",
- },
- { 
-  id: "apa",
-  beerImage: "img/our-bestsellers-ара.png",
-  name: "Our Bestsellers",
-  seedsImage: "img/seeds-decor.svg",
-  subtitle: "FRUITY",
-  title: "AMERICAN PALE AL",
-  description: `American pale ale is similar to Indian pale ale, but in this
-  case, only American-made hops and malt are used. At the same
-  time, APA is characterized by a stunning combination of citrus
-  notes: grapefruit, lemon, orange, as well as hop bitterness,
-  traditional for ale.`,
-  infoTitle1: "EXTRACT",
-  infoText1: "16,00%",
-  infoTitle2: "ALCOHOL",
-  infoText2: "5,8%",
-  infoTitle3: "IBU",
-  infoText3: "43",
-  infoTitle4: "SERVING TEMPERATURE",
-  infoText4: "10 °C",
- }
-];
+      infoTitle1: "EXTRACT",
+      infoText1: "16,00%",
+      infoTitle2: "ALCOHOL",
+      infoText2: "5,7%",
+      infoTitle3: "IBU",
+      infoText3: "39",
+      infoTitle4: "SERVING TEMPERATURE",
+      infoText4: "10 °C",
+    },
+    {
+      id: "apa",
+      className: "apa",
+      beerImage: "img/our-bestsellers-ара.png",
+      name: "Our Bestsellers",
+      seedsImage: "img/seeds-decor.svg",
+      subtitle: "FRUITY",
+      title: "AMERICAN PALE AL",
+      description: `American pale ale is similar to Indian pale ale, but in this
+   case, only American-made hops and malt are used. At the same
+   time, APA is characterized by a stunning combination of citrus
+   notes: grapefruit, lemon, orange, as well as hop bitterness,
+   traditional for ale.`,
+      infoTitle1: "EXTRACT",
+      infoText1: "16,00%",
+      infoTitle2: "ALCOHOL",
+      infoText2: "5,8%",
+      infoTitle3: "IBU",
+      infoText3: "43",
+      infoTitle4: "SERVING TEMPERATURE",
+      infoText4: "10 °C",
+    },
+  ];
 
-function renderBestsellers(bestsellers) {
-  const bestsellersContainer = document.querySelector('.bestsellers');
-  bestsellersContainer.innerHTML = '';
-  for (const bestseller of bestsellers) {
-    bestsellersContainer.innerHTML += `
+  function renderBestsellers(bestsellers) {
+    const bestsellersContainer = document.querySelector(".bestsellers");
+    bestsellersContainer.innerHTML = "";
+    for (const bestseller of bestsellers) {
+      bestsellersContainer.innerHTML += `
     <article class="bestseller">
     <div class="bestseller__beer-img">
       <img
         src="${bestseller.beerImage}"
-        alt="Picture of Imperial Stout Beer"
-        class="stout"
+        alt="${bestseller.beerImagealt}"
+        class="${className}"
       />
     </div>
     <div class="bestseller__content">
@@ -115,10 +120,9 @@ function renderBestsellers(bestsellers) {
       </div>
     </div>
   </article>
-    `
+    `;
+    }
   }
-}
 
-renderBestsellers(bestsellers);
-
-}) ();
+  renderBestsellers(bestsellers);
+})();
