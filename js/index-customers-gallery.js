@@ -71,7 +71,7 @@
     showCurrentSlide();
   }
 
-  //setInterval(nextSlide, 3000);
+  setInterval(nextSlide, 3000);
   showCurrentSlide();
 
   const nextButton = document.querySelector(

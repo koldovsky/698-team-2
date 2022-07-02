@@ -1,25 +1,77 @@
+  .bestsellers__btn {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background: var(--bestseller-btn);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .bestsellers__btn:hover {
+    opacity: 1;
+  }
+  .bestsellers__btn-prev {
+    top: 45%;
+    left: 10px;
+  }
+  .bestsellers__btn-next {
+    top: 45%;
+    right: 10px;
+  } 
+  .bestsellers__arrow {
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    color: var(--main-text-color);
+  }
+  .bestsellers__arrow-back {
+    padding-left: 6px;
+  } 
+  
+  @media (min-width: 780px) {
+    .bestsellers__btn {
+      width: 26px;
+      height: 26px;
+      background: var(--background-color-dark);
+    }
+    .bestsellers__arrow {
+        font-size: 24px;
+        color: var(--bestseller-btn);
+    }
+  } 
 .bestsellers {
     background-color: var(--background-color-dark);
     padding: 90px 5px;
+    height: 1250px;
+    overflow: hidden;
+    position: relative;
 }
-
+.bestsellers > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .bestseller {
     display: flex;
     flex-direction: column;
-}
-
-.apa {
-    min-width: 450px;
-    height: auto;
-    transform: scale(1);
-    margin-right: 100px;
 }
 
 @media (min-width: 768px) {
     .bestseller {
         flex-direction: row;
     }
-}
+    .apa {
+        min-width: 450px;
+        height: auto;
+        transform: scale(1);
+        margin-right: 100px;
+    }
+    .bestsellers {
+        height: 720px;
+    }
+} 
 
 .bestseller__decor-seeds {
     padding: 0px 0px 10px 0px;
@@ -130,3 +182,24 @@
     font-weight: 700;
     font-size: 22px;
 }
+.bestsellers__counter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bestsellers__btn-counter {
+    display: flex;
+    border-radius: 20%;
+    margin-left: 10px;
+    border: none;
+    background: var(--bestseller-btn);
+    cursor: pointer;
+    width: 78px;
+    height: 3px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.bestsellers__btn-counter:hover {
+    opacity: 1;
+  }
