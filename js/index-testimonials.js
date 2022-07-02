@@ -1,7 +1,10 @@
 (function () {
 
-  document.querySelectorAll('.carousel').forEach(carousel => {
+  document.querySelectorAll('.testimonials-carousel').forEach(carousel => {
     const items = carousel.querySelectorAll('.carousel__item');
+    items.forEach((item, i) => {
+      item.style.transform = `translateX(${i * 100}%)`;
+    });
     const buttonsHtml = Array.from(items, () => {
       return `<button class="feedbacks-wrapper__slider-round"></button>`;
     });
@@ -17,6 +20,9 @@
     function changeSlide(slideIdx) {
       items.forEach(item => item.classList.remove("carousel__item-selected"));
       buttons.forEach(button => button.classList.remove("carousel__button-selected"));
+      items.forEach((item, i) => {
+        item.style.transform = `translateX(${100 * (i - slideIdx)}%)`;
+      });
 
       items[slideIdx].classList.add("carousel__item-selected");
       buttons[slideIdx].classList.add("carousel__button-selected");
@@ -31,16 +37,16 @@
 
     function nextSlide() {
       const currentSlideIdx = getCurrenSlideIdx();
+      const nextSlideIdx = currentSlideIdx + 1 >= items.length ? items.length - 1 : currentSlideIdx + 1;
 
-      const nextSlideIdx = currentSlideIdx + 1 >= items.length ? 0 : currentSlideIdx + 1;
       changeSlide(nextSlideIdx);
     }
 
     function prevSlide() {
       const currentSlideIdx = getCurrenSlideIdx();
+      const prevSlideIdx = currentSlideIdx - 1 < 0 ? 0 : currentSlideIdx - 1;
 
-      const nextSlideIdx = currentSlideIdx - 1 < 0 ? items.length - 1 : currentSlideIdx - 1;
-      changeSlide(nextSlideIdx);
+      changeSlide(prevSlideIdx);
     }
 
     buttons.forEach((button, i) => {
