@@ -6,7 +6,7 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
-    opacity: 0.7;
+    opacity: 0.9;
     transition: 0.5s;
   }
   .bestsellers__btn:hover {
@@ -61,6 +61,8 @@
 @media (min-width: 768px) {
     .bestseller {
         flex-direction: row;
+        height: 720px;
+        padding: 20px 0;
     }
     .apa {
         min-width: 450px;
@@ -69,7 +71,7 @@
         margin-right: 100px;
     }
     .bestsellers {
-        height: 720px;
+         height: 678px;
     }
 } 
 
@@ -110,7 +112,7 @@
 
 @media (min-width: 791px) {
     .bestseller__title {
-        width: 349px;
+        width: 100%;
     }
 }
 
@@ -183,23 +185,30 @@
     font-size: 22px;
 }
 .bestsellers__counter-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.bestsellers__btn-counter {
-    display: flex;
+    position: absolute;
+    top: 96%;
+    left: 42%;
+} 
+ .bestsellers__counter-button {
     border-radius: 20%;
     margin-left: 10px;
     border: none;
     background: var(--bestseller-btn);
     cursor: pointer;
-    width: 78px;
+    width: 30px;
     height: 3px;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: 0.5s;
+    z-index: 10;
 }
-.bestsellers__btn-counter:hover {
+.bestsellers__counter-button:hover {
     opacity: 1;
-  }
+  } 
+.bestsellers__counter-button:active {
+    opacity: 1;
+}
+@media (min-width: 768px) {
+    .bestsellers__counter-buttons {
+        top: 92%;
+    } 
+}
