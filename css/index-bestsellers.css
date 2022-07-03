@@ -44,7 +44,7 @@
 .bestsellers {
     background-color: var(--background-color-dark);
     padding: 90px 5px;
-    height: 1250px;
+    height: 1180px;
     overflow: hidden;
     position: relative;
 }
@@ -56,12 +56,22 @@
 .bestseller {
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
-
+@media (min-width: 430px) {
+    .bestsellers {
+        height: 1300px;
+    }
+}
+@media (min-width: 500px) {
+    .bestsellers {
+        height: 1350px;
+    }
+} 
 @media (min-width: 768px) {
     .bestseller {
         flex-direction: row;
-        height: 720px;
+        height: 718px;
         padding: 20px 0;
     }
     .apa {
@@ -71,7 +81,7 @@
         margin-right: 100px;
     }
     .bestsellers {
-         height: 678px;
+        height: 698px;
     }
 } 
 
@@ -209,6 +219,6 @@
 }
 @media (min-width: 768px) {
     .bestsellers__counter-buttons {
-        top: 92%;
+        top: 96%;
     } 
 }
