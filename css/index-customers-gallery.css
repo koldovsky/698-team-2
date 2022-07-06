@@ -63,6 +63,15 @@
   object-fit: cover;
 }
 
+@media (min-width: 991px) {
+  .customers-gallery  {
+    height: 320px;
+  }
+  .customers-gallery__img {
+    width: 21rem;
+    height: 320px;
+  } 
+}  
  /* @media (min-width: 767px) {
   .customers-gallery__images {
     flex-direction: row;
