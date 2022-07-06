@@ -155,6 +155,7 @@
 `,
   ];
 
+
   let slideIdx = 0;
 
   function showCurrentSlide() {
@@ -171,11 +172,15 @@
 
   function nextSlide() {
     slideIdx = slideIdx + 1 >= slides.length ? 0 : slideIdx + 1;
+    document.querySelector('.bestsellers__counter-buttons .selected').classList.remove('selected');
+    counterButtonscontainer.children[slideIdx].classList.add('selected');
     showCurrentSlide();
   }
 
   function prevSlide() {
     slideIdx = slideIdx - 1 < 0 ? slides.length - 1 : slideIdx - 1;
+    document.querySelector('.bestsellers__counter-buttons .selected').classList.remove('selected');
+    counterButtonscontainer.children[slideIdx].classList.add('selected');
     showCurrentSlide();
   }
 
@@ -202,6 +207,18 @@
   for (let i = 0; i < counterButtons.length; i++) {
     counterButtons[i].addEventListener("click", () => showSlide(i));
   }
+
+  counterButtons.forEach((counterButton, slideIdx) => {
+    counterButton.addEventListener('click', () => {
+      document.querySelector('.bestsellers__counter-buttons .selected').classList.remove('selected');
+      counterButton.classList.add('selected');
+    });
+  });
+
+const counterButtonscontainer = document.querySelector('.bestsellers__counter-buttons');
+
+
+
   //   const bestsellers = [
   //     {
   //       id: "stout",

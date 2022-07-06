@@ -214,7 +214,7 @@
 .bestsellers__counter-button:hover {
     opacity: 1;
   } 
-.bestsellers__counter-button:active {
+.selected {
     opacity: 1;
 }
 @media (min-width: 768px) {
