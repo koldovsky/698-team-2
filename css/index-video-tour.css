@@ -163,18 +163,10 @@
   height: 100%;
   width: 100%;
   background-color: #f9e59f;
-  border-radius: 25px 25px 0 25px;
+  border-radius: 25px 25px 0 0;
 }
-.overley::before,
-.overley::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #f9e59f;
-}
+
+
 .overley::after {
   border-radius: 0 25px 0 0;
   background-color: rgb(63, 51, 38);
