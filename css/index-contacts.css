@@ -214,6 +214,7 @@
 @media (min-width: 780px) {
     .contacts__form {
         margin-top: 0;
+        justify-content: center;
         /*margin-bottom: 30px;*/
     }
 }
@@ -227,6 +228,13 @@
     border: 2px solid var(--border-color-light);
     border-radius: 25px;
     background-color: var(--events-background-color);
+    margin-bottom: 25px;
+}
+
+@media (min0width: 780px) {
+    .contacts__form_input {
+        margin-top: 0;
+    }
 }
 
 input::placeholder {
