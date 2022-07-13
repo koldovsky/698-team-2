@@ -1,25 +1,89 @@
+  .bestsellers__btn {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background: var(--bestseller-btn);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+  .bestsellers__btn:hover {
+    opacity: 1;
+  }
+  .bestsellers__btn-prev {
+    top: 45%;
+    left: 10px;
+  }
+  .bestsellers__btn-next {
+    top: 45%;
+    right: 10px;
+  } 
+  .bestsellers__arrow {
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    color: var(--main-text-color);
+  }
+  .bestsellers__arrow-back {
+    padding-left: 6px;
+  } 
+  
+  @media (min-width: 780px) {
+    .bestsellers__btn {
+      width: 26px;
+      height: 26px;
+      background: var(--background-color-dark);
+    }
+    .bestsellers__arrow {
+        font-size: 24px;
+        color: var(--bestseller-btn);
+    }
+  } 
 .bestsellers {
     background-color: var(--background-color-dark);
     padding: 90px 5px;
+    height: 1180px;
+    overflow: hidden;
+    position: relative;
 }
-
+.bestsellers > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .bestseller {
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
-
-.apa {
-    min-width: 450px;
-    height: auto;
-    transform: scale(1);
-    margin-right: 100px;
+@media (min-width: 430px) {
+    .bestsellers {
+        height: 1300px;
+    }
 }
-
+@media (min-width: 500px) {
+    .bestsellers {
+        height: 1350px;
+    }
+} 
 @media (min-width: 768px) {
     .bestseller {
         flex-direction: row;
+        height: 718px;
+        padding: 20px 0;
     }
-}
+    .apa {
+        min-width: 450px;
+        height: auto;
+        transform: scale(1);
+        margin-right: 100px;
+    }
+    .bestsellers {
+        height: 698px;
+    }
+} 
 
 .bestseller__decor-seeds {
     padding: 0px 0px 10px 0px;
@@ -58,7 +122,7 @@
 
 @media (min-width: 791px) {
     .bestseller__title {
-        width: 349px;
+        width: 100%;
     }
 }
 
@@ -129,4 +193,32 @@
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 22px;
+}
+.bestsellers__counter-buttons {
+    position: absolute;
+    top: 96%;
+    left: 42%;
+} 
+ .bestsellers__counter-button {
+    border-radius: 20%;
+    margin-left: 10px;
+    border: none;
+    background: var(--bestseller-btn);
+    cursor: pointer;
+    width: 30px;
+    height: 3px;
+    opacity: 0.5;
+    transition: 0.5s;
+    z-index: 10;
+}
+.bestsellers__counter-button:hover {
+    opacity: 1;
+  } 
+.selected {
+    opacity: 1;
+}
+@media (min-width: 768px) {
+    .bestsellers__counter-buttons {
+        top: 96%;
+    } 
 }

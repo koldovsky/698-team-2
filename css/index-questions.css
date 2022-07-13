@@ -53,6 +53,7 @@
 }
 .question__acc-panel{
   overflow: hidden;
+  display: none;
 }
 hr{
   opacity:0.2;
@@ -67,4 +68,15 @@ hr{
 .questions__btn-icon{
   display: flex;
   align-items: center;
+}
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }

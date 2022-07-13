@@ -1,13 +1,61 @@
-.customers-gallery__images {
+.customers-gallery {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 303px;
+  overflow: hidden;
+  position: relative;
 }
 
-.customers-gallery__img {
-  width: 320px;
-  height: 302px;
-  overflow: hidden;
+.customers-gallery__btn {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  background: var(--background-color-dark);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: 0.5s;
 }
+.customers-gallery__btn:hover {
+  opacity: 1;
+}
+.customers-gallery__btn-prev {
+  top: 45%;
+  left: 10px;
+}
+.customers-gallery__btn-next {
+  top: 45%;
+  right: 10px;
+}
+.customers-gallery__arrow {
+  display: block;
+  margin: auto;
+  font-size: 15px;
+  color: var(--text-color-light);
+}
+.customers-gallery__arrow-back {
+  padding-left: 6px;
+} 
+
+@media (min-width: 780px) {
+  .customers-gallery__btn {
+    width: 26px;
+    height: 26px;
+  }
+  .customers-gallery__arrow {
+      font-size: 24px;
+  }
+}
+.customers-gallery__images {
+  display: flex;
+}
+
+ .customers-gallery__img {
+  width: 20rem;
+  height: 303px;
+  overflow: hidden;
+} 
 
 .customers-gallery__img img {
   width: 100%;
@@ -15,7 +63,16 @@
   object-fit: cover;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 991px) {
+  .customers-gallery  {
+    height: 320px;
+  }
+  .customers-gallery__img {
+    width: 21rem;
+    height: 320px;
+  } 
+}  
+ /* @media (min-width: 767px) {
   .customers-gallery__images {
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,7 +95,7 @@
     height: 280px;
     width: 250px;
   }
-}
+} */ 
 
 .customers-gallery-photo1 {
   object-position: 29% 0;
@@ -55,7 +112,6 @@
 .customers-gallery-photo4 {
   object-position: 0 97%;
 }
-
 .customers-gallery-photo5 {
   object-position: center;
 }
@@ -64,16 +120,16 @@
   padding: 0px 0px 93% 0px;
   overflow: hidden;
   position: relative;
-}
-.customers-gallery__img img {
+} */
+/* .customers-gallery__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-}
-.customers-gallery-photo1 {
+} */
+/* .customers-gallery-photo1 {
   object-position: 29% 0;
 }
 .customers-gallery-photo2 {
