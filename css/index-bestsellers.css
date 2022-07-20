@@ -43,7 +43,7 @@
   } 
 .bestsellers {
     background-color: var(--background-color-dark);
-    padding: 90px 5px;
+    padding: 0px 5px;
     height: 1180px;
     overflow: hidden;
     position: relative;
